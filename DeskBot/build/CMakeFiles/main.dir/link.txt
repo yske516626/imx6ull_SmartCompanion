@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.dir/main.c.o -o "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/bin/main"  gui_app/libgui_app.a utils/libutils.a lvgl/lib/liblvgl.a lvgl/lib/liblvgl_examples.a lvgl/lib/liblvgl_demos.a lvgl/lib/liblvgl_thorvg.a -lSDL2 /usr/lib/x86_64-linux-gnu/libdrm.so -lm -lpthread -ljson-c /usr/lib/x86_64-linux-gnu/libcurl.so lvgl/lib/liblvgl.a

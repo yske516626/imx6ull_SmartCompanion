@@ -1,0 +1,2 @@
+/usr/bin/ar qc libutils.a CMakeFiles/utils.dir/mouse_cursor_icon.c.o
+/usr/bin/ranlib libutils.a
