@@ -33,7 +33,7 @@ bool Audio::StartRecording()
                         sampleRate,
                         sampleRate / 1000 * frameDurationMs, //单个通道的音频帧
                         paClipOff, // 不剪裁样本
-                        recordCallback,  //回调函数，每当缓冲区满时会调用此函数（音频帧样本数量满足：channels * sampleRate / 1000 * frameDurationMs）
+                        recordCallback,  //回调函数，每当缓冲区满时会调用此函数（样本数量满足：channels * sampleRate / 1000 * frameDurationMs）
                         this);
     if (error != paNoError) {
         USER_LOG_ERROR("Error opening recordStream: %s", Pa_GetErrorText(error));
@@ -190,3 +190,187 @@ void Audio::ClearplayQueue() {
     std::queue<std::vector<int16_t>> empty;
     std::swap(playQueue, empty);
 }
+
+
+//////////////////////////录音文件相关//////////////////////////////////////
+
+std::queue<std::vector<int16_t>> Audio::LoadAudioFromFile(const std::string& filename_, int frameDurationMs_) {
+    std::ifstream infile(filename_, std::ios::binary);
+    if (!infile) {
+        USER_LOG_ERROR("Failed to open file: %s", filename_.c_str());
+        return {};
+    }
+
+    // 获取文件大小
+    infile.seekg(0, std::ios::end);
+    std::streampos fileSize = infile.tellg();
+    infile.seekg(0, std::ios::beg);
+
+    // 计算样本数量
+    size_t numSamples = static_cast<size_t>(fileSize) / sizeof(int16_t);
+
+    // 读取音频数据
+    std::vector<int16_t> audio_data(numSamples);
+    infile.read(reinterpret_cast<char*>(audio_data.data()), fileSize);
+
+    if (!infile) {
+        USER_LOG_ERROR("Error reading file: %s", filename_.c_str());
+        return {};
+    }
+
+    // 计算每帧的样本数量
+    int frame_size = sampleRate / 1000 * frameDurationMs_;
+
+    // 将音频数据切分成帧
+    std::queue<std::vector<int16_t>> audio_frames;
+    for (size_t i = 0; i < numSamples; i += frame_size) {
+        size_t remaining_samples = numSamples - i;
+        size_t current_frame_size = (remaining_samples > frame_size) ? frame_size : remaining_samples;
+
+        std::vector<int16_t> frame(current_frame_size);
+        std::copy(audio_data.begin() + i, audio_data.begin() + i + current_frame_size, frame.begin());
+        audio_frames.push(frame);
+    }
+
+    return audio_frames;
+}
+
+
+//////////////////////////录音编码相关//////////////////////////////////////
+bool Audio::encode(const std::vector<int16_t>& pcmFrame_, uint8_t* opusData_, size_t& opusDataSize_) {
+	if (!encoder) {
+        USER_LOG_ERROR("Encoder not initialized");
+        return false;
+    }
+
+    int frame_size = pcmFrame_.size();
+
+    if (frame_size <= 0) {
+        USER_LOG_ERROR("Invalid PCM frame size: %d", frame_size);
+        return false;
+    }
+
+    // 对当前帧进行编码
+    int encoded_bytes_size = opus_encode(encoder, pcmFrame_.data(), frame_size, opusData_, 2048); // max 2048 bytes
+
+    if (encoded_bytes_size < 0) {
+        USER_LOG_ERROR("Encoding failed: %s", opus_strerror(encoded_bytes_size));
+        return false;
+    }
+
+    opusDataSize_ = static_cast<size_t>(encoded_bytes_size);
+    return true;
+}
+
+
+BinProtocol* Audio::Opus_To_Binary(const uint8_t* opusData_, size_t opuDataSize_)
+{
+	// Allocate memory for BinaryProtocol + payload
+    auto pack = (BinProtocol*)malloc(sizeof(BinProtocol) + opuDataSize_);
+    if (!pack) {
+        USER_LOG_ERROR("Memory allocation failed");
+        return nullptr;
+    }
+
+    pack->version = htons(1); //版本号为1
+    pack->type = htons(0);  // Indicate audio data type
+    pack->payload_size = htonl(opuDataSize_);
+    assert(sizeof(BinProtocol) == 8);
+
+    // Copy payload data
+    memcpy(pack->payload, opusData_, opuDataSize_);  //负载数据
+
+    return pack;
+}
+
+
+bool Audio::PCMFrame_Pop_recordQueue(std::vector<int16_t>& pcmFrame)
+{
+	std::unique_lock<std::mutex> lock(recordMutex);
+    recordCV.wait(lock, [this] { return !recordQueue.empty() || !isRecording; });
+
+    if (recordQueue.empty()) {
+        return false; // 队列为空且不再录音
+    }
+
+    pcmFrame.swap(recordQueue.front());  //取出
+    recordQueue.pop(); //出队
+    return true;
+}
+///////////////////////////播放相关///////////////////////////////////////////////
+bool Audio::decode(const uint8_t* opusData_, size_t opusDataSize_, std::vector<int16_t>& pcmFrame_)
+{
+ 	if (!decoder) {
+        USER_LOG_ERROR("Decoder not initialized");
+        return false;
+    }
+
+    int frame_size = 960;  // 40ms 帧, 16000Hz 采样率, 理论上应该是 640 个样本，但是 Opus 限制为 960
+    pcmFrame_.resize(frame_size * channels);
+
+    // 对当前的opus数据进行解码成pcm，通过参数pcmFrame传出
+    int decoded_samples = opus_decode(decoder, opusData_, static_cast<int>(opusDataSize_), pcmFrame_.data(), frame_size, 0);
+
+    if (decoded_samples < 0) {
+        USER_LOG_ERROR("Decoding failed: %s", opus_strerror(decoded_samples));
+        return false;
+    }
+
+    pcmFrame_.resize(decoded_samples * channels);
+    return true;
+}
+
+bool Audio::Binary_To_Opus(const uint8_t* packed_, size_t packedSize_, ProtocolInfo& ProtocolInfo_, std::vector<uint8_t>& opusData_)
+{
+	//BinProtocol：int16_t version; uint16_t type;uint32_t payload_size;uint8_t payload[];
+	if (packedSize_ < sizeof(uint16_t) * 2 + sizeof(uint32_t)) {
+		USER_LOG_ERROR("Packed data size is too small");
+        return false;
+	}
+
+	//解析头部数据
+	const uint16_t* binPro_Version =  reinterpret_cast<const uint16_t*>(packed_);
+	const uint16_t* binPro_Type = reinterpret_cast<const uint16_t*>(packed_ + sizeof(uint16_t));
+	const uint32_t* binPro_PayloadSize = reinterpret_cast<const uint32_t*>(packed_ + sizeof(uint16_t) + sizeof(uint16_t));
+
+	uint16_t version = ntohl(*binPro_Version);  //协议版本
+	uint16_t type = ntohl(*binPro_Type);  //协议数据类型
+	uint32_t payloadSize = ntohl(*binPro_PayloadSize); //负载数据的大小
+
+	//提取负载中的opus音频压缩数据
+	if (packedSize_ < sizeof(uint16_t) * 2 + sizeof(uint32_t) + payloadSize) {
+		USER_LOG_ERROR("Packed data size does not match payload size");
+        return false;
+	}
+
+
+	// protocol_info
+    ProtocolInfo_.version = version;
+    ProtocolInfo_.type = type;
+
+    // 提取并填充opus_data:将BinProtocol中的Payload数据()取出
+    opusData_.clear();
+    opusData_.insert(opusData_.end(), packed_ + sizeof(uint16_t) * 2 + sizeof(uint32_t), 
+                     packed_ + sizeof(uint16_t) * 2 + sizeof(uint32_t) + payloadSize);
+
+    return true;
+}
+
+void Audio::PCMFrame_Push_PlayQueue(const std::vector<int16_t>& pcmFrame)
+{
+	std::lock_guard<std::mutex> lock(recordMutex);
+    
+    // 计算每帧的样本数量
+    int frame_size = sampleRate / 1000 * frameDurationMs;
+
+    // 如果当前帧大小小于预期的帧大小，则填充静音
+    if (pcmFrame.size() < static_cast<size_t>(frame_size)) {
+        auto tempFrame = pcmFrame;
+        tempFrame.resize(frame_size, 0); // 使用0填充至目标长度
+        playQueue.push(tempFrame);
+    } else {
+        playQueue.push(pcmFrame);   //将解码后的
+    }
+}
+
+

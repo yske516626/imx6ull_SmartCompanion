@@ -15,12 +15,14 @@
 
 
 
-// Opus 音频编码二进制数据
+
+// Opus 音频编码后的二进制数据 --- 用于和服务器进行传输：PCM >压缩> OPUS
 struct BinProtocol {
 	uint16_t version;       // 版本号
-	uint16_t type;          // 数据包类型
-	uint32_t payload_size;  // 数据负载的大小
-	uint8_t payload[];      // 数据负载
+	uint16_t type;          // 类型
+	uint32_t payload_size;  //数据负载的大小 
+	uint8_t payload[];      // 数据负载，就是opus音频压缩数据，还需要解码成uint16_t的PCM音频数据才能进行播放
+		//每个音频帧中存放的就是PCM数据
 } __attribute__((packed));
 
 //协议参数

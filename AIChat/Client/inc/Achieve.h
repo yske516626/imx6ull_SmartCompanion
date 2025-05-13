@@ -21,6 +21,11 @@
 enum class State {
 	FAULT,  //故障状态
 	STARTUP,  //启动状态
+	STOP, //停止状态
+	IDLE, //空闲状态
+	LISTEN, //倾听状态
+	THINK,  //思考状态
+	SPEAK, //讲话状态
 };
 
 //事件
@@ -88,8 +93,8 @@ private:
 
 };
 
+//消息线程队列
 class MessageThreadQueue {
-
 public:
 	void QueuePush(const std::string item) {
         std::lock_guard<std::mutex> lock(mutex);
@@ -105,9 +110,13 @@ public:
             MessageQueue.pop();
             return item;  
         }
-        return NULL; 
+        return "noMessage"; 
     }
     
+	bool QueueIsEmpty() const {
+        std::lock_guard<std::mutex> lock(mutex); 
+        return MessageQueue.empty();
+    }
 
 private:
 	std::queue<std::string> MessageQueue;  //消息队列
@@ -135,7 +144,7 @@ private:
 状态改变json：
 {
     "type": "state", 
-    "state": "idle" 
+    "state": "DILE" 
 }
 */
 
@@ -158,22 +167,65 @@ public:
 	Achieve(const std::string& serverIP_, int serverPort_, const std::string& headerToken_, const std::string& headerDeviceId_, int headerProVersion_, const std::string& modelApiKey_, int sampleRate_, int channels_, int frameDurationMs_);
 	~Achieve();
 
+	void Run();
+	/**
+	 * @brief  停止运行
+	 * @note   
+	 * @retval None
+	 */
+	void Stop() {
+		USER_LOG_INFO("Stopping ai chat app...");
+		eventQueue.QueuePush(static_cast<int>(Event::TO_STOP));
+	}
+	/**
+	 * @brief  获取当前的状态
+	 * @note   
+	 * @retval 
+	 */
+	int getState() {
+		return state.Get_CutrrentState();
+	}
+
+	//command命令回调
+	using moveCommand_cb_t = std::function<void(std::string)>;
+    void SetCmdCallback(moveCommand_cb_t callback); 
 
 	
+
 private:
+	using AppEvent_t_ = int;
+	
 	Audio audio;  //音频
     WebsocketHandle wsClient;  //websocket客户端
 	StateMachine state; //客户端状态
 
 	int headerProVersion;  //ws协议版本号
 	std::string modelApiKey;  //阿里云百练通义模型api密钥
+	int protocolVersion;  //传输协议版本
+
 
 	bool audioMsgFirstRev = true; //音频二进制数据第一次接收状态标识，防止事件重复入队
 
 	EventThreadQueue eventQueue; //事件队列
   	MessageThreadQueue massageQueue;  //消息队列，放服务器传来的状态改变json消息
 
+	//原子变量用于通知线程退出
+	std::atomic<bool> threadsStopFlag{false};  // 初始化一个原子布尔变量，初始值为 false
+
+	std::string asrText;
+	bool tts_Is_completed = false;
+	bool conversation_Is_completed = false;  //交流是否完成
+
+
+	moveCommand_cb_t moveCommand_cb;  //命令回调，其它模块调用接口设定
+
+	std::atomic<bool> stateRunning {false};  //状态是否开始运行
+	std::thread stateRunning_Thread;  //状态运行线程
+
+	bool ttsCompleted = false;
+	////////////////////////////////////function///////////////////////////////////////////////////
 	/**
+	 * 
 	 * @brief  websocket客户端收到消息后，后续调用的消息处理函数
 	 * @note   WebsocketHandle::wsMessage_cb->message_cb函数：WebsocketMessage_cb
 	 * @param  wsMessage_: 收到的消息
@@ -181,6 +233,39 @@ private:
 	 * @retval None
 	 */
 	void WebsocketMessage_cb(const std::string& wsMessage_, bool isBinary_);
+	//消息类型处理选择
+	int ProcessMessages(const std::string& message_);
+	int ProcessMessages_VAD(const Json::Value& root);
+	int ProcessMessages_ASR(const Json::Value& root);
+	int ProcessMessages_TTS(const Json::Value& root);
+	int ProcessMessages_CMD(const Json::Value& root);
+
+
+	//相应状态的进入和退出回调函数
+	void Fault_Enter();
+	void Fault_Exit();
+
+	void Startup_Enter();
+	void Startup_Exit();
+
+	void Stop_Enter();
+	void Stop_Exit();
+
+	void Idle_Enter();
+	void IdleState_Run();
+	void Idle_Exit();
+
+	void Listen_Enter();
+	void ListenState_Run();
+	void Listen_Exit();
+
+	void Think_Enter();
+	void Think_Exit();
+
+	void Speak_Enter();
+	void SpeakState_Run();
+	void Speak_Exit();
+
 };
 
 #endif
