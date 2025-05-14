@@ -76,15 +76,15 @@ utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.o: utils/CMakeFiles/utils.dir/fla
 utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/utils/mouse_cursor_icon.c
 utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.o: utils/CMakeFiles/utils.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.o"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/utils" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.o -MF CMakeFiles/utils.dir/mouse_cursor_icon.c.o.d -o CMakeFiles/utils.dir/mouse_cursor_icon.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/utils/mouse_cursor_icon.c"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/utils" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.o -MF CMakeFiles/utils.dir/mouse_cursor_icon.c.o.d -o CMakeFiles/utils.dir/mouse_cursor_icon.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/utils/mouse_cursor_icon.c"
 
 utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/utils.dir/mouse_cursor_icon.c.i"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/utils" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/utils/mouse_cursor_icon.c" > CMakeFiles/utils.dir/mouse_cursor_icon.c.i
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/utils" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/utils/mouse_cursor_icon.c" > CMakeFiles/utils.dir/mouse_cursor_icon.c.i
 
 utils/CMakeFiles/utils.dir/mouse_cursor_icon.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/utils.dir/mouse_cursor_icon.c.s"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/utils" && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/utils/mouse_cursor_icon.c" -o CMakeFiles/utils.dir/mouse_cursor_icon.c.s
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/utils" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/utils/mouse_cursor_icon.c" -o CMakeFiles/utils.dir/mouse_cursor_icon.c.s
 
 # Object files for target utils
 utils_OBJECTS = \

@@ -87,36 +87,6 @@ add_custom_command(
 
 
 
-if(TARGET_ARM)
-   
-    # 获取所有需要复制的共享库文件
-    set(SHARED_LIBS
-        "${AI_CAMERA_PATH}/cpp/3rdparty/librga/Linux/armhf_uclibc/librga.so"
-        "${AI_CAMERA_PATH}/cpp/3rdparty/rknpu2/Linux/armhf-uclibc/librknnmrt.so"
-    )
-
-    # 创建目标目录
-    add_custom_command(
-        TARGET main POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E make_directory ${OUTPUT_PATH}/lib
-        COMMENT "Creating lib directory for shared libraries"
-    )
-
-    # 复制每个共享库文件
-    foreach(LIB_FILE ${SHARED_LIBS})
-        get_filename_component(FILE_NAME ${LIB_FILE} NAME) # 获取文件名
-        add_custom_command(
-            TARGET main POST_BUILD
-            COMMAND ${CMAKE_COMMAND} -E copy_if_different
-                    ${LIB_FILE}
-                    ${OUTPUT_PATH}/lib/${FILE_NAME}
-            COMMENT "Copying ${FILE_NAME} to executable output directory"
-        )
-    endforeach()
-    # 设置运行时 rpath，以便可执行文件能够在运行时找到指定目录下的共享库
-    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,-rpath,\$ORIGIN/lib")
-
-endif()
 
 # 使用 set_target_properties 设置 main 的输出目录
 set_target_properties(main PROPERTIES

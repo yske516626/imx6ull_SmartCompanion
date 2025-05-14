@@ -34,8 +34,8 @@ endif()
 pkg_check_modules(PORTAUDIO REQUIRED portaudio-2.0)
 pkg_check_modules(OPUS REQUIRED opus)
 pkg_check_modules(JSONCPP REQUIRED jsoncpp)
-find_package(WEBSOCKETPP REQUIRED)
-
+#find_package(websocketpp REQUIRED)
+add_subdirectory(websocketpp)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/third_party/snowboy)
 
 # Include directories
@@ -43,15 +43,16 @@ include_directories(
     ${OPUS_INCLUDE_DIRS}
     ${PORTAUDIO_INCLUDE_DIRS}
     ${JSONCPP_INCLUDE_DIRS}
-    ${WEBSOCKETPP_INCLUDE_DIRS}
+    #${WEBSOCKETPP_INCLUDE_DIRS}
     ${Boost_INCLUDE_DIRS}
+	include_directories(websocketpp)
 )
 
 # Add the source files
 add_library(AIChatCore STATIC
-    src/AudioProcess.cc
-    src/WebsocketClient.cc
-    src/Application.cc
+    src/Audio.cc
+    src/WebsocketHandler.cc
+    src/Achieve.cc
     src/StateMachine.cc
 )
 
@@ -72,8 +73,8 @@ add_executable(AIChatClient
 )
 target_link_libraries(AIChatClient AIChatCore)
 
-# Add the C interface (cmake details in c_interface/CMakeLists.txt)
-add_subdirectory(c_interface)
+# Add the Interface (cmake details in Interface/CMakeLists.txt)
+add_subdirectory(Interface)
 
 # Custom command to clean up generated files
 if(NOT TARGET clean-all)
@@ -83,7 +84,8 @@ if(NOT TARGET clean-all)
     )
 endif()
 
-set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/rv1106_AIChatClient_demo")
+#执行make install，生成可执行文件夹，复制到开发板上运行
+set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/AIChatClient_demo") 
 # 安装可执行文件到/bin子目录
 install(TARGETS AIChatClient DESTINATION bin)
 

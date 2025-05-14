@@ -76,15 +76,15 @@ CMakeFiles/main.dir/main.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/main.c
 CMakeFiles/main.dir/main.c.o: CMakeFiles/main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/main.c.o -MF CMakeFiles/main.dir/main.c.o.d -o CMakeFiles/main.dir/main.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/main.c"
+	/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/main.c.o -MF CMakeFiles/main.dir/main.c.o.d -o CMakeFiles/main.dir/main.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/main.c"
 
 CMakeFiles/main.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/main.c" > CMakeFiles/main.dir/main.c.i
+	/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/main.c" > CMakeFiles/main.dir/main.c.i
 
 CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/main.c" -o CMakeFiles/main.dir/main.c.s
+	/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/main.c" -o CMakeFiles/main.dir/main.c.s
 
 # Object files for target main
 main_OBJECTS = \
@@ -101,8 +101,8 @@ main_EXTERNAL_OBJECTS =
 /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: lvgl/lib/liblvgl_examples.a
 /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: lvgl/lib/liblvgl_demos.a
 /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: lvgl/lib/liblvgl_thorvg.a
-/home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: /usr/lib/x86_64-linux-gnu/libdrm.so
-/home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: /usr/lib/x86_64-linux-gnu/libcurl.so
+/home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/libdrm.so
+/home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr/lib/libcurl.so
 /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: lvgl/lib/liblvgl.a
 /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/bin/main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable \"/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/bin/main\""

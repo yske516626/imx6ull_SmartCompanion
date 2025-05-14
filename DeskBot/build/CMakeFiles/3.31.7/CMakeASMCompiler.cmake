@@ -1,10 +1,10 @@
-set(CMAKE_ASM_COMPILER "/usr/bin/cc")
+set(CMAKE_ASM_COMPILER "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc")
 set(CMAKE_ASM_COMPILER_ARG1 "")
-set(CMAKE_AR "/usr/bin/ar")
-set(CMAKE_ASM_COMPILER_AR "/usr/bin/gcc-ar")
-set(CMAKE_RANLIB "/usr/bin/ranlib")
-set(CMAKE_ASM_COMPILER_RANLIB "/usr/bin/gcc-ranlib")
-set(CMAKE_LINKER "/usr/bin/ld")
+set(CMAKE_AR "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-ar")
+set(CMAKE_ASM_COMPILER_AR "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc-ar")
+set(CMAKE_RANLIB "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-ranlib")
+set(CMAKE_ASM_COMPILER_RANLIB "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc-ranlib")
+set(CMAKE_LINKER "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_ASM_COMPILER_LINKER "")
@@ -19,7 +19,8 @@ set(CMAKE_ASM_COMPILER_VERSION "")
 set(CMAKE_ASM_COMPILER_ENV_VAR "ASM")
 
 
-
+set(CMAKE_ASM_COMPILER_SYSROOT "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr")
+set(CMAKE_COMPILER_SYSROOT "/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot/usr")
 
 set(CMAKE_ASM_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)
 set(CMAKE_ASM_LINKER_PREFERENCE 0)
