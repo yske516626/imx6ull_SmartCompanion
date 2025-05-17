@@ -117,6 +117,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.31/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/local/share/cmake-3.31/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/local/share/cmake-3.31/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+  "/usr/local/share/cmake-3.31/Modules/FindALSA.cmake"
   "/usr/local/share/cmake-3.31/Modules/FindCURL.cmake"
   "/usr/local/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/share/cmake-3.31/Modules/FindPackageMessage.cmake"
@@ -188,4 +189,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "lvgl/CMakeFiles/lvgl_demos.dir/DependInfo.cmake"
   "gui_app/CMakeFiles/gui_app.dir/DependInfo.cmake"
   "utils/CMakeFiles/utils.dir/DependInfo.cmake"
+  "common/CMakeFiles/common.dir/DependInfo.cmake"
   )

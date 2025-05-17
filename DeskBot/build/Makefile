@@ -278,6 +278,19 @@ utils/fast:
 	$(MAKE) $(MAKESILENT) -f utils/CMakeFiles/utils.dir/build.make utils/CMakeFiles/utils.dir/build
 .PHONY : utils/fast
 
+#=============================================================================
+# Target rules for targets named common
+
+# Build rule for target.
+common: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common
+.PHONY : common
+
+# fast build rule for target.
+common/fast:
+	$(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
+.PHONY : common/fast
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -316,6 +329,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... clean-all"
 	@echo "... run"
+	@echo "... common"
 	@echo "... gui_app"
 	@echo "... lvgl"
 	@echo "... lvgl_demos"

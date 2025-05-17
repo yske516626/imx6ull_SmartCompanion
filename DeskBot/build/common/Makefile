@@ -161,6 +161,44 @@ depend:
 	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+common/CMakeFiles/common.dir/rule:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 common/CMakeFiles/common.dir/rule
+.PHONY : common/CMakeFiles/common.dir/rule
+
+# Convenience name for target.
+common: common/CMakeFiles/common.dir/rule
+.PHONY : common
+
+# fast build rule for target.
+common/fast:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/build
+.PHONY : common/fast
+
+sys_manager/sys_manager.o: sys_manager/sys_manager.c.o
+.PHONY : sys_manager/sys_manager.o
+
+# target to build an object file
+sys_manager/sys_manager.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sys_manager/sys_manager.c.o
+.PHONY : sys_manager/sys_manager.c.o
+
+sys_manager/sys_manager.i: sys_manager/sys_manager.c.i
+.PHONY : sys_manager/sys_manager.i
+
+# target to preprocess a source file
+sys_manager/sys_manager.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sys_manager/sys_manager.c.i
+.PHONY : sys_manager/sys_manager.c.i
+
+sys_manager/sys_manager.s: sys_manager/sys_manager.c.s
+.PHONY : sys_manager/sys_manager.s
+
+# target to generate assembly for a file
+sys_manager/sys_manager.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f common/CMakeFiles/common.dir/build.make common/CMakeFiles/common.dir/sys_manager/sys_manager.c.s
+.PHONY : sys_manager/sys_manager.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -173,6 +211,10 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... common"
+	@echo "... sys_manager/sys_manager.o"
+	@echo "... sys_manager/sys_manager.i"
+	@echo "... sys_manager/sys_manager.s"
 .PHONY : help
 
 

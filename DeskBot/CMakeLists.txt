@@ -47,7 +47,7 @@ target_link_libraries(
     main 
     gui_app
     utils
-    # common
+    common
 )
 
 include(${CMAKE_CURRENT_LIST_DIR}/lvgl/tests/FindLibDRM.cmake)

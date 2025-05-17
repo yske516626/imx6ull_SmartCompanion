@@ -76,63 +76,198 @@ gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o: gui_app/CM
 gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/common/animation/lv_lib_animation.c
 gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o -MF CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o.d -o CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/animation/lv_lib_animation.c"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o -MF CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o.d -o CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/animation/lv_lib_animation.c"
 
 gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.i"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/animation/lv_lib_animation.c" > CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.i
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/animation/lv_lib_animation.c" > CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.i
 
 gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.s"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/animation/lv_lib_animation.c" -o CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.s
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/animation/lv_lib_animation.c" -o CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.s
 
 gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
 gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/common/others/lv_lib_template.c
 gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o -MF CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o.d -o CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/others/lv_lib_template.c"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o -MF CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o.d -o CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/others/lv_lib_template.c"
 
 gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.i"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/others/lv_lib_template.c" > CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.i
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/others/lv_lib_template.c" > CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.i
 
 gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.s"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/others/lv_lib_template.c" -o CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.s
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/others/lv_lib_template.c" -o CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.s
 
 gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
 gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/common/page_manager/Func_PageManager.c
 gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o -MF CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o.d -o CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/page_manager/Func_PageManager.c"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o -MF CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o.d -o CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/page_manager/Func_PageManager.c"
 
 gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.i"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/page_manager/Func_PageManager.c" > CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.i
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/page_manager/Func_PageManager.c" > CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.i
 
 gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.s"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/page_manager/Func_PageManager.c" -o CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.s
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/common/page_manager/Func_PageManager.c" -o CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home1.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home1.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home1.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home1.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home2.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home2.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home2.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home2.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home3.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home3.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home3.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home3.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home4.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home4.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home4.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home4.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home5.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home5.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home5.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home5.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home6.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home6.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home6.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home6.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home7.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home7.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home7.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home7.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.s
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/images/UI_Img_Home8.c
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o -MF CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o.d -o CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home8.c"
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home8.c" > CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.i
+
+gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/images/UI_Img_Home8.c" -o CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.s
+
+gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
+gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/pages/UI_A_HomePage/UI_A_HomePage.c
+gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o -MF CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o.d -o CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/pages/UI_A_HomePage/UI_A_HomePage.c"
+
+gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.i"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/pages/UI_A_HomePage/UI_A_HomePage.c" > CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.i
+
+gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.s"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/pages/UI_A_HomePage/UI_A_HomePage.c" -o CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.s
 
 gui_app/CMakeFiles/gui_app.dir/ui.c.o: gui_app/CMakeFiles/gui_app.dir/flags.make
 gui_app/CMakeFiles/gui_app.dir/ui.c.o: /home/book/nfs_rootfs/project/Deskto\ Companion/DeskBot/gui_app/ui.c
 gui_app/CMakeFiles/gui_app.dir/ui.c.o: gui_app/CMakeFiles/gui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object gui_app/CMakeFiles/gui_app.dir/ui.c.o"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/ui.c.o -MF CMakeFiles/gui_app.dir/ui.c.o.d -o CMakeFiles/gui_app.dir/ui.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/ui.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object gui_app/CMakeFiles/gui_app.dir/ui.c.o"
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT gui_app/CMakeFiles/gui_app.dir/ui.c.o -MF CMakeFiles/gui_app.dir/ui.c.o.d -o CMakeFiles/gui_app.dir/ui.c.o -c "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/ui.c"
 
 gui_app/CMakeFiles/gui_app.dir/ui.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gui_app.dir/ui.c.i"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/ui.c" > CMakeFiles/gui_app.dir/ui.c.i
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/ui.c" > CMakeFiles/gui_app.dir/ui.c.i
 
 gui_app/CMakeFiles/gui_app.dir/ui.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gui_app.dir/ui.c.s"
-	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/ui.c" -o CMakeFiles/gui_app.dir/ui.c.s
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && /home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-gcc --sysroot=/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/arm-buildroot-linux-gnueabihf/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/gui_app/ui.c" -o CMakeFiles/gui_app.dir/ui.c.s
 
 # Object files for target gui_app
 gui_app_OBJECTS = \
 "CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o" \
 "CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o" \
 "CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o" \
+"CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o" \
+"CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o" \
 "CMakeFiles/gui_app.dir/ui.c.o"
 
 # External object files for target gui_app
@@ -141,10 +276,19 @@ gui_app_EXTERNAL_OBJECTS =
 gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/common/animation/lv_lib_animation.c.o
 gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/common/others/lv_lib_template.c.o
 gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o
+gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o
 gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/ui.c.o
 gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/build.make
 gui_app/libgui_app.a: gui_app/CMakeFiles/gui_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libgui_app.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking C static library libgui_app.a"
 	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && $(CMAKE_COMMAND) -P CMakeFiles/gui_app.dir/cmake_clean_target.cmake
 	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build/gui_app" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gui_app.dir/link.txt --verbose=$(VERBOSE)
 

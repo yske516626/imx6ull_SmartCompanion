@@ -1,0 +1,2 @@
+/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-ar qc libcommon.a CMakeFiles/common.dir/sys_manager/sys_manager.c.o
+/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-ranlib libcommon.a

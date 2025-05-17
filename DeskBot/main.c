@@ -5,9 +5,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-
-//#include "gui_app/ui.h"
+#include "gui_app/ui.h"
 
 static const char *getenv_default(const char *name, const char *dflt)
 {

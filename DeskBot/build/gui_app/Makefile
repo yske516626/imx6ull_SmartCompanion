@@ -247,6 +247,222 @@ common/page_manager/Func_PageManager.c.s:
 	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/common/page_manager/Func_PageManager.c.s
 .PHONY : common/page_manager/Func_PageManager.c.s
 
+images/UI_Img_Home1.o: images/UI_Img_Home1.c.o
+.PHONY : images/UI_Img_Home1.o
+
+# target to build an object file
+images/UI_Img_Home1.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.o
+.PHONY : images/UI_Img_Home1.c.o
+
+images/UI_Img_Home1.i: images/UI_Img_Home1.c.i
+.PHONY : images/UI_Img_Home1.i
+
+# target to preprocess a source file
+images/UI_Img_Home1.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.i
+.PHONY : images/UI_Img_Home1.c.i
+
+images/UI_Img_Home1.s: images/UI_Img_Home1.c.s
+.PHONY : images/UI_Img_Home1.s
+
+# target to generate assembly for a file
+images/UI_Img_Home1.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home1.c.s
+.PHONY : images/UI_Img_Home1.c.s
+
+images/UI_Img_Home2.o: images/UI_Img_Home2.c.o
+.PHONY : images/UI_Img_Home2.o
+
+# target to build an object file
+images/UI_Img_Home2.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.o
+.PHONY : images/UI_Img_Home2.c.o
+
+images/UI_Img_Home2.i: images/UI_Img_Home2.c.i
+.PHONY : images/UI_Img_Home2.i
+
+# target to preprocess a source file
+images/UI_Img_Home2.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.i
+.PHONY : images/UI_Img_Home2.c.i
+
+images/UI_Img_Home2.s: images/UI_Img_Home2.c.s
+.PHONY : images/UI_Img_Home2.s
+
+# target to generate assembly for a file
+images/UI_Img_Home2.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home2.c.s
+.PHONY : images/UI_Img_Home2.c.s
+
+images/UI_Img_Home3.o: images/UI_Img_Home3.c.o
+.PHONY : images/UI_Img_Home3.o
+
+# target to build an object file
+images/UI_Img_Home3.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.o
+.PHONY : images/UI_Img_Home3.c.o
+
+images/UI_Img_Home3.i: images/UI_Img_Home3.c.i
+.PHONY : images/UI_Img_Home3.i
+
+# target to preprocess a source file
+images/UI_Img_Home3.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.i
+.PHONY : images/UI_Img_Home3.c.i
+
+images/UI_Img_Home3.s: images/UI_Img_Home3.c.s
+.PHONY : images/UI_Img_Home3.s
+
+# target to generate assembly for a file
+images/UI_Img_Home3.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home3.c.s
+.PHONY : images/UI_Img_Home3.c.s
+
+images/UI_Img_Home4.o: images/UI_Img_Home4.c.o
+.PHONY : images/UI_Img_Home4.o
+
+# target to build an object file
+images/UI_Img_Home4.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.o
+.PHONY : images/UI_Img_Home4.c.o
+
+images/UI_Img_Home4.i: images/UI_Img_Home4.c.i
+.PHONY : images/UI_Img_Home4.i
+
+# target to preprocess a source file
+images/UI_Img_Home4.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.i
+.PHONY : images/UI_Img_Home4.c.i
+
+images/UI_Img_Home4.s: images/UI_Img_Home4.c.s
+.PHONY : images/UI_Img_Home4.s
+
+# target to generate assembly for a file
+images/UI_Img_Home4.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home4.c.s
+.PHONY : images/UI_Img_Home4.c.s
+
+images/UI_Img_Home5.o: images/UI_Img_Home5.c.o
+.PHONY : images/UI_Img_Home5.o
+
+# target to build an object file
+images/UI_Img_Home5.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.o
+.PHONY : images/UI_Img_Home5.c.o
+
+images/UI_Img_Home5.i: images/UI_Img_Home5.c.i
+.PHONY : images/UI_Img_Home5.i
+
+# target to preprocess a source file
+images/UI_Img_Home5.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.i
+.PHONY : images/UI_Img_Home5.c.i
+
+images/UI_Img_Home5.s: images/UI_Img_Home5.c.s
+.PHONY : images/UI_Img_Home5.s
+
+# target to generate assembly for a file
+images/UI_Img_Home5.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home5.c.s
+.PHONY : images/UI_Img_Home5.c.s
+
+images/UI_Img_Home6.o: images/UI_Img_Home6.c.o
+.PHONY : images/UI_Img_Home6.o
+
+# target to build an object file
+images/UI_Img_Home6.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.o
+.PHONY : images/UI_Img_Home6.c.o
+
+images/UI_Img_Home6.i: images/UI_Img_Home6.c.i
+.PHONY : images/UI_Img_Home6.i
+
+# target to preprocess a source file
+images/UI_Img_Home6.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.i
+.PHONY : images/UI_Img_Home6.c.i
+
+images/UI_Img_Home6.s: images/UI_Img_Home6.c.s
+.PHONY : images/UI_Img_Home6.s
+
+# target to generate assembly for a file
+images/UI_Img_Home6.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home6.c.s
+.PHONY : images/UI_Img_Home6.c.s
+
+images/UI_Img_Home7.o: images/UI_Img_Home7.c.o
+.PHONY : images/UI_Img_Home7.o
+
+# target to build an object file
+images/UI_Img_Home7.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.o
+.PHONY : images/UI_Img_Home7.c.o
+
+images/UI_Img_Home7.i: images/UI_Img_Home7.c.i
+.PHONY : images/UI_Img_Home7.i
+
+# target to preprocess a source file
+images/UI_Img_Home7.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.i
+.PHONY : images/UI_Img_Home7.c.i
+
+images/UI_Img_Home7.s: images/UI_Img_Home7.c.s
+.PHONY : images/UI_Img_Home7.s
+
+# target to generate assembly for a file
+images/UI_Img_Home7.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home7.c.s
+.PHONY : images/UI_Img_Home7.c.s
+
+images/UI_Img_Home8.o: images/UI_Img_Home8.c.o
+.PHONY : images/UI_Img_Home8.o
+
+# target to build an object file
+images/UI_Img_Home8.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.o
+.PHONY : images/UI_Img_Home8.c.o
+
+images/UI_Img_Home8.i: images/UI_Img_Home8.c.i
+.PHONY : images/UI_Img_Home8.i
+
+# target to preprocess a source file
+images/UI_Img_Home8.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.i
+.PHONY : images/UI_Img_Home8.c.i
+
+images/UI_Img_Home8.s: images/UI_Img_Home8.c.s
+.PHONY : images/UI_Img_Home8.s
+
+# target to generate assembly for a file
+images/UI_Img_Home8.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/images/UI_Img_Home8.c.s
+.PHONY : images/UI_Img_Home8.c.s
+
+pages/UI_A_HomePage/UI_A_HomePage.o: pages/UI_A_HomePage/UI_A_HomePage.c.o
+.PHONY : pages/UI_A_HomePage/UI_A_HomePage.o
+
+# target to build an object file
+pages/UI_A_HomePage/UI_A_HomePage.c.o:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.o
+.PHONY : pages/UI_A_HomePage/UI_A_HomePage.c.o
+
+pages/UI_A_HomePage/UI_A_HomePage.i: pages/UI_A_HomePage/UI_A_HomePage.c.i
+.PHONY : pages/UI_A_HomePage/UI_A_HomePage.i
+
+# target to preprocess a source file
+pages/UI_A_HomePage/UI_A_HomePage.c.i:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.i
+.PHONY : pages/UI_A_HomePage/UI_A_HomePage.c.i
+
+pages/UI_A_HomePage/UI_A_HomePage.s: pages/UI_A_HomePage/UI_A_HomePage.c.s
+.PHONY : pages/UI_A_HomePage/UI_A_HomePage.s
+
+# target to generate assembly for a file
+pages/UI_A_HomePage/UI_A_HomePage.c.s:
+	cd "/home/book/nfs_rootfs/project/Deskto Companion/DeskBot/build" && $(MAKE) $(MAKESILENT) -f gui_app/CMakeFiles/gui_app.dir/build.make gui_app/CMakeFiles/gui_app.dir/pages/UI_A_HomePage/UI_A_HomePage.c.s
+.PHONY : pages/UI_A_HomePage/UI_A_HomePage.c.s
+
 ui.o: ui.c.o
 .PHONY : ui.o
 
@@ -293,6 +509,33 @@ help:
 	@echo "... common/page_manager/Func_PageManager.o"
 	@echo "... common/page_manager/Func_PageManager.i"
 	@echo "... common/page_manager/Func_PageManager.s"
+	@echo "... images/UI_Img_Home1.o"
+	@echo "... images/UI_Img_Home1.i"
+	@echo "... images/UI_Img_Home1.s"
+	@echo "... images/UI_Img_Home2.o"
+	@echo "... images/UI_Img_Home2.i"
+	@echo "... images/UI_Img_Home2.s"
+	@echo "... images/UI_Img_Home3.o"
+	@echo "... images/UI_Img_Home3.i"
+	@echo "... images/UI_Img_Home3.s"
+	@echo "... images/UI_Img_Home4.o"
+	@echo "... images/UI_Img_Home4.i"
+	@echo "... images/UI_Img_Home4.s"
+	@echo "... images/UI_Img_Home5.o"
+	@echo "... images/UI_Img_Home5.i"
+	@echo "... images/UI_Img_Home5.s"
+	@echo "... images/UI_Img_Home6.o"
+	@echo "... images/UI_Img_Home6.i"
+	@echo "... images/UI_Img_Home6.s"
+	@echo "... images/UI_Img_Home7.o"
+	@echo "... images/UI_Img_Home7.i"
+	@echo "... images/UI_Img_Home7.s"
+	@echo "... images/UI_Img_Home8.o"
+	@echo "... images/UI_Img_Home8.i"
+	@echo "... images/UI_Img_Home8.s"
+	@echo "... pages/UI_A_HomePage/UI_A_HomePage.o"
+	@echo "... pages/UI_A_HomePage/UI_A_HomePage.i"
+	@echo "... pages/UI_A_HomePage/UI_A_HomePage.s"
 	@echo "... ui.o"
 	@echo "... ui.i"
 	@echo "... ui.s"

@@ -6,7 +6,7 @@
 extern "C" {
 #endif
 
-#define USE_CODEBLOCK 0  //是否使用codeblock仿真器运行lvgl
+#define USE_CODEBLOCK 0  //忽视
 
 #if USE_CODEBLOCK
 #include "../../lvgl.h"

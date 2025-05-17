@@ -46,13 +46,17 @@ find_package(PkgConfig REQUIRED)
 
 # 确保链接必要的数学库
 if(TARGET_ARM)
-    find_package(OpenBLAS REQUIRED)
+    # find_package(OpenBLAS REQUIRED)
 
-    if(OpenBLAS_FOUND)
-        set(BLAS_LIBRARIES ${OpenBLAS_LIBRARIES})
-        set(LAPACK_LIBRARIES ${OpenBLAS_LIBRARIES})  # OpenBLAS 包含 LAPACK 实现
-        set(BLAS_INCLUDE_DIRS ${OpenBLAS_INCLUDE_DIR})
-    endif()
+    # if(OpenBLAS_FOUND)
+    #     set(BLAS_LIBRARIES ${OpenBLAS_LIBRARIES})
+    #     set(LAPACK_LIBRARIES ${OpenBLAS_LIBRARIES})  # OpenBLAS 包含 LAPACK 实现
+    #     set(BLAS_INCLUDE_DIRS ${OpenBLAS_INCLUDE_DIR})
+    # endif()
+	 # 手动指定 OpenBLAS 路径
+	 set(BLAS_INCLUDE_DIRS "${CMAKE_SYSROOT}/usr/include")
+	 set(BLAS_LIBRARIES "${CMAKE_SYSROOT}/usr/lib/libopenblas.a")
+	 set(LAPACK_LIBRARIES "${CMAKE_SYSROOT}/usr/lib/libopenblas.a")
 else()
     find_package(BLAS REQUIRED)
     find_package(LAPACK REQUIRED)
