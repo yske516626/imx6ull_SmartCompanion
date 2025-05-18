@@ -68,7 +68,24 @@ static void Sys_Arguments_Init(void) {
         ui_SystemArguments.day = 1;
         ui_SystemArguments.hour = 0;
 		ui_SystemArguments.minute = 0;
-
+		ui_SystemArguments.brightness = 50;
+        ui_SystemArguments.sound = 50;
+        ui_SystemArguments.wifi_connected = false;
+        ui_SystemArguments.auto_time = true;
+        ui_SystemArguments.auto_location = false;
+        strcpy(ui_SystemArguments.location.city, "东城区");
+        strcpy(ui_SystemArguments.location.adcode, "110101");
+        strcpy(ui_SystemArguments.gaode_api_key, "your_amap_key");
+        strcpy(ui_SystemArguments.aichat_app_info.serverIp, "172.32.0.100");
+        ui_SystemArguments.aichat_app_info.serverPort = 8765;
+        strcpy(ui_SystemArguments.aichat_app_info.headerToken, "123456");
+        strcpy(ui_SystemArguments.aichat_app_info.headerDeviceId, "00:11:22:33:44:55");
+        strcpy(ui_SystemArguments.aichat_app_info.modelApiKey, "aliyun_key");
+        ui_SystemArguments.aichat_app_info.headerProVersion = 1;
+        ui_SystemArguments.aichat_app_info.sampleRate = 16000;
+        ui_SystemArguments.aichat_app_info.channels = 1;
+		ui_SystemArguments.aichat_app_info.frameDuration= 40;
+		
 		//创建一个文件去保存系统配置
 		Sys_SaveArguments(sys_config_path, &ui_SystemArguments);
 	}

@@ -16,7 +16,7 @@ static const char *getenv_default(const char *name, const char *dflt)
 static void lv_linux_indev_init(void)
 {
     lv_indev_t * touch;
-    touch = lv_evdev_create(LV_INDEV_TYPE_POINTER, "/dev/input/event0");
+    touch = lv_evdev_create(LV_INDEV_TYPE_POINTER, "/dev/input/event1");
 }
 #endif
 

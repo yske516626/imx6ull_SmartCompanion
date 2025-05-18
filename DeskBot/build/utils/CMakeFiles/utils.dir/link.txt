@@ -1,2 +1,0 @@
-/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-ar qc libutils.a CMakeFiles/utils.dir/mouse_cursor_icon.c.o
-/home/book/100ask_imx6ull-sdk/Buildroot_2020.02.x/output/host/bin/arm-buildroot-linux-gnueabihf-ranlib libutils.a

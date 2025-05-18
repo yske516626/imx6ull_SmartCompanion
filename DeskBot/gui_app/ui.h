@@ -31,6 +31,8 @@ LV_IMG_DECLARE(UI_Img_Home7)
 LV_IMG_DECLARE(UI_Img_Home8)
 
 
+LV_FONT_DECLARE(ui_icon_HomeWifi40)
+
 // ui apps data
 //typedef lv_lib_pm_page_t ui_app_data_t;
 

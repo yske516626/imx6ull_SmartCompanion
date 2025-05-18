@@ -9,13 +9,40 @@
 extern "C" {
 #endif
 
+
+typedef struct {
+    char city[36];
+    char adcode[16]; // 'gao de' Amap adcode
+} LocationInfo_t;
+
+typedef struct {
+    char serverIp[40];
+    int serverPort;
+    char headerToken[20];
+    char headerDeviceId[20];
+    char modelApiKey[36];        // 阿里百炼 api key for deepseek (need store)
+    int headerProVersion;
+    int sampleRate;
+    int channels;
+    int frameDuration;
+} AIChatClientInfo_t;
+
 //参数结构体
 typedef struct {
     int year;    
     int month;  
     int day;   
     int hour;
-    int minute; 
+	int minute;
+	uint16_t brightness;  //亮度
+	uint16_t sound;    //声音
+	bool wifi_connected;
+	bool auto_time;  //自动更新时间？？？
+	bool auto_location;  //时区
+	LocationInfo_t location;
+	char gaode_api_key[33];  //高德api
+	AIChatClientInfo_t aichat_app_info; 
+
 }sys_Arguments_t;
 
 
