@@ -3,7 +3,7 @@ add_library(AIchat-c-interface STATIC
 	AIChatInterface.cc  # C wrapper implementation
 )
 # Link the core library into the C wrapper
-target_link_libraries(AIchat-c-interface PRIVATE AIChatCore)
+target_link_libraries(AIchat-c-interface PRIVATE AIChatCore) # AIChatCore在上一个makelist文件
 
 # 如果BUILD_TESTS选项被启用，则添加测试可执行文件
 if(BUILD_TESTS)

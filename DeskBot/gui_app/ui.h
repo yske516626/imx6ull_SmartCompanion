@@ -13,6 +13,9 @@ extern "C" {
 #define UI_SCREEN_WIDTH 800
 #define UI_SCREEN_HEIGHT 480
 
+#define OFFSET_X   -100 //偏移量
+#define OFFSET_Y   -20 //偏移量
+
 //typedef system_para_t ui_system_para_t;
 
 // extern variables
@@ -29,7 +32,9 @@ LV_IMG_DECLARE(UI_Img_Home5)
 LV_IMG_DECLARE(UI_Img_Home6)
 LV_IMG_DECLARE(UI_Img_Home7)
 LV_IMG_DECLARE(UI_Img_Home8)
-
+LV_IMG_DECLARE(UI_Img_AIChatQuestion120)
+LV_IMG_DECLARE(UI_Img_AIChatThink120)
+LV_IMG_DECLARE(UI_Img_AIChatHand120)
 
 LV_FONT_DECLARE(ui_icon_HomeWifi40)
 

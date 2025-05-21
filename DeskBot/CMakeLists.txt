@@ -86,7 +86,29 @@ add_custom_command(
 )
 
 
+# 引用AIChat_demo中的库
+set(AI_CHAT_CLIENT_PATH "${PROJECT_SOURCE_DIR}/../AIChat/Client" CACHE PATH "Path to AIChat_demo Client")
+add_subdirectory(${AI_CHAT_CLIENT_PATH} ${CMAKE_BINARY_DIR}/AIChat_build)
+# 链接所需的库文件给main
+target_link_libraries(main AIchat-c-interface AIChatCore)
 
+# 复制AIchat所需文件
+add_custom_command(
+    TARGET main POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${OUTPUT_PATH}/third_party/snowboy/resources
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${OUTPUT_PATH}/third_party/snowboy/resources/models
+    COMMAND ${CMAKE_COMMAND} -E make_directory ${OUTPUT_PATH}/third_party/audio
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${AI_CHAT_CLIENT_PATH}/third_party/snowboy/resources/common.res
+            ${OUTPUT_PATH}/third_party/snowboy/resources/common.res
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${AI_CHAT_CLIENT_PATH}/third_party/snowboy/resources/models/echo.pmdl
+            ${OUTPUT_PATH}/third_party/snowboy/resources/models/echo.pmdl
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${AI_CHAT_CLIENT_PATH}/third_party/audio/waked.pcm
+            ${OUTPUT_PATH}/third_party/audio/waked.pcm
+    COMMENT "Copying AI Chat necessary resource files to executable output directory"
+)
 
 # 使用 set_target_properties 设置 main 的输出目录
 set_target_properties(main PROPERTIES

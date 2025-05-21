@@ -62,7 +62,11 @@ int sys_LoadAgrFromFile(const char* filepath_, sys_Arguments_t* params_);
 //new一个配置文件，将系统参数保存进去
 int Sys_SaveArguments(const char* filepath_, const sys_Arguments_t* params_);
 
-	
+//获取设备wifi状态
+bool Sys_GetWifiStatus(void);
+
+//获取当前时间
+int Sys_GetTimeFromNtp(const char* ntpServer_, int* year_, int* month_, int* day_, int* hour_, int* minute_, int* second_);
 #ifdef __cplusplus
 } /*extern "C"*/
 #endif

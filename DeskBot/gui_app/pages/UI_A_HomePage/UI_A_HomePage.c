@@ -1,4 +1,5 @@
 #include "UI_A_HomePage.h"
+#include <pthread.h>
 /*******************************图标***********************************************/
 
 #define LV_ICON_WIFI "\xEE\x9D\xAC"
@@ -33,7 +34,6 @@ static void AppContLeft_Animation(lv_obj_t* TargetObject, int delay)
 {
     int32_t x_pos_now = lv_obj_get_x(TargetObject);
     lv_lib_anim_user_animation(TargetObject, 0, 100, x_pos_now, x_pos_now - desktop_data.witdh, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_x, _ui_anim_completed_cb);
-	LV_LOG_WARN("Left");
 }
 
 //页面右滑动动画
@@ -41,7 +41,6 @@ static void AppContRight_Animation(lv_obj_t* TargetObject, int delay)
 {
     int32_t x_pos_now = lv_obj_get_x(TargetObject);
     lv_lib_anim_user_animation(TargetObject, 0, 100, x_pos_now, x_pos_now + desktop_data.witdh, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_x, _ui_anim_completed_cb);
-	LV_LOG_WARN("Right");
 }
 
 
@@ -82,13 +81,15 @@ static void Home_Event_cb(lv_event_t* e)
 
 static void AIChat_event_cb(lv_event_t* e)
 {
-	lv_obj_t* Screen = lv_obj_create(NULL);
-	lv_obj_set_style_bg_color(Screen, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);  //全黑背景
-	lv_obj_remove_flag(Screen, LV_OBJ_FLAG_SCROLLABLE);
-
-	lv_scr_load_anim(Screen, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 100, 0, true);
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
 
 }
+
 
 /*******************************初始化和销毁***********************************************/
 
@@ -98,6 +99,7 @@ void ui_HomePage_Init() {
 	lv_obj_t* homeScreen = lv_obj_create(NULL);
 	lv_obj_set_style_bg_color(homeScreen, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);  //全黑背景
 	lv_obj_remove_flag(homeScreen, LV_OBJ_FLAG_SCROLLABLE);
+
 
 	//获取时间
 	int year; int month; int day; int hour; int minute; int second;
@@ -111,24 +113,24 @@ void ui_HomePage_Init() {
 	// ----- 时间标签
 	lv_obj_t* TimeLabel = lv_label_create(homeScreen);
     lv_obj_set_width(TimeLabel, LV_SIZE_CONTENT); 
-    lv_obj_set_height(TimeLabel, LV_SIZE_CONTENT);  
-    lv_obj_set_x(TimeLabel, 0);
-    lv_obj_set_y(TimeLabel, 11);  //下移动10
+	lv_obj_set_height(TimeLabel, LV_SIZE_CONTENT);
+	lv_obj_set_y(TimeLabel, 11);  //下移动11
     lv_obj_set_align(TimeLabel, LV_ALIGN_TOP_MID);
     lv_label_set_text(TimeLabel, "11:59");
     lv_obj_set_style_text_font(TimeLabel, &lv_font_montserrat_44, LV_PART_MAIN | LV_STATE_DEFAULT);
     char time_str[6];
     sprintf(time_str, "%02d:%02d", ui_SystemArguments.hour, ui_SystemArguments.minute);
-    lv_label_set_text(TimeLabel, time_str);
+	lv_label_set_text(TimeLabel, time_str);
+
 
 
 	// ----- wifi打开
 	wifiLabel = lv_label_create(homeScreen);
     lv_obj_set_width(wifiLabel, LV_SIZE_CONTENT);  
     lv_obj_set_height(wifiLabel, LV_SIZE_CONTENT);   
-    lv_obj_set_x(wifiLabel, 300);
+    lv_obj_set_x(wifiLabel, -11);
     lv_obj_set_y(wifiLabel, 11);
-    lv_obj_set_align(wifiLabel, LV_ALIGN_TOP_MID);
+    lv_obj_set_align(wifiLabel, LV_ALIGN_TOP_RIGHT);
     lv_label_set_text(wifiLabel, LV_ICON_WIFI);
     lv_obj_set_style_text_font(wifiLabel, &ui_icon_HomeWifi40, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -136,9 +138,9 @@ void ui_HomePage_Init() {
 	noWifiLabel = lv_label_create(homeScreen);
     lv_obj_set_width(noWifiLabel, LV_SIZE_CONTENT);  
     lv_obj_set_height(noWifiLabel, LV_SIZE_CONTENT);  
-    lv_obj_set_x(noWifiLabel, 300);
+    lv_obj_set_x(noWifiLabel, -11);
     lv_obj_set_y(noWifiLabel, 11);
-    lv_obj_set_align(noWifiLabel, LV_ALIGN_TOP_MID);
+    lv_obj_set_align(noWifiLabel, LV_ALIGN_TOP_RIGHT);
     lv_label_set_text(noWifiLabel,LV_ICON_NOWIFI);
     lv_obj_set_style_text_font(noWifiLabel, &ui_icon_HomeWifi40, LV_PART_MAIN | LV_STATE_DEFAULT);
     if(ui_SystemArguments.wifi_connected == true)
@@ -155,16 +157,20 @@ void ui_HomePage_Init() {
 	///////////////////////////app按钮容器///////////////////////////
 	lv_obj_t * App_Button_Container = lv_obj_create(homeScreen);
  	lv_obj_set_width(App_Button_Container, desktop_data.witdh * desktop_data.page_number); //1600
-    lv_obj_set_height(App_Button_Container, desktop_data.height);  //480
-    lv_obj_set_x(App_Button_Container, -desktop_data.index * desktop_data.witdh);  //位于第一页
-    lv_obj_set_align(App_Button_Container, LV_ALIGN_LEFT_MID);  //靠左边居中对齐
-    lv_obj_remove_flag(App_Button_Container, LV_OBJ_FLAG_SCROLLABLE);     
+	lv_obj_set_height(App_Button_Container, desktop_data.height);  //480
+	
+	//lv_obj_set_x(App_Button_Container, -desktop_data.index * desktop_data.witdh);  //位于第一页
+	lv_obj_set_x(App_Button_Container, -20);  //位于第一页
+
+	lv_obj_set_align(App_Button_Container, LV_ALIGN_LEFT_MID);
+	lv_obj_remove_flag(App_Button_Container, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_set_style_bg_color(App_Button_Container, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(App_Button_Container, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(App_Button_Container, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(App_Button_Container, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     // 手势事件：左右滑切换页面
     lv_obj_add_event_cb(homeScreen, Home_Event_cb, LV_EVENT_GESTURE, App_Button_Container);
+
 
 
 	//所处页面标识
@@ -196,26 +202,26 @@ void ui_HomePage_Init() {
 
 
 
-	///////////////////////////AIChat///////////////////////////
+	/////////////////////////AIChat///////////////////////////
 	lv_obj_t * AIChatBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(AIChatBtn, 120);
 	lv_obj_set_height(AIChatBtn, 120);
+	lv_obj_set_x(AIChatBtn, 85);
+	lv_obj_set_y(AIChatBtn, 82);
 	lv_obj_set_align(AIChatBtn, LV_ALIGN_TOP_LEFT);
-	lv_obj_set_x(AIChatBtn, 70);
-    lv_obj_set_y(AIChatBtn, 82);
-    lv_obj_add_flag(AIChatBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
+	lv_obj_add_flag(AIChatBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
     lv_obj_remove_flag(AIChatBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(AIChatBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(AIChatBtn, &UI_Img_Home1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    lv_obj_add_event_cb(AIChatBtn, AIChat_event_cb, LV_EVENT_CLICKED, "WeatherPage");
+    lv_obj_add_event_cb(AIChatBtn, AIChat_event_cb, LV_EVENT_CLICKED, "AIChatPage");
 
 
 	///////////////////////////天气///////////////////////////
 	lv_obj_t * WeatherBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(WeatherBtn, 120);
     lv_obj_set_height(WeatherBtn, 120);
-    lv_obj_set_x(WeatherBtn, 240);
+    lv_obj_set_x(WeatherBtn, 255);
     lv_obj_set_y(WeatherBtn, 82);
     lv_obj_add_flag(WeatherBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(WeatherBtn, LV_OBJ_FLAG_SCROLLABLE); 
@@ -226,7 +232,7 @@ void ui_HomePage_Init() {
 	lv_obj_t * DrawBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(DrawBtn, 120);
     lv_obj_set_height(DrawBtn, 120);
-    lv_obj_set_x(DrawBtn, 430);
+    lv_obj_set_x(DrawBtn, 425);
     lv_obj_set_y(DrawBtn, 82);
     lv_obj_add_flag(DrawBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(DrawBtn, LV_OBJ_FLAG_SCROLLABLE); 
@@ -237,7 +243,7 @@ void ui_HomePage_Init() {
 	lv_obj_t * calculatorBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(calculatorBtn, 120);
     lv_obj_set_height(calculatorBtn, 120);
-    lv_obj_set_x(calculatorBtn, 610);
+    lv_obj_set_x(calculatorBtn, 595);
     lv_obj_set_y(calculatorBtn, 82);
     lv_obj_add_flag(calculatorBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(calculatorBtn, LV_OBJ_FLAG_SCROLLABLE); 
@@ -249,7 +255,7 @@ void ui_HomePage_Init() {
 	lv_obj_t * MuYuBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(MuYuBtn, 120);
     lv_obj_set_height(MuYuBtn, 120);
-    lv_obj_set_x(MuYuBtn, 70);
+    lv_obj_set_x(MuYuBtn, 85);
     lv_obj_set_y(MuYuBtn, 270);
     lv_obj_add_flag(MuYuBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(MuYuBtn, LV_OBJ_FLAG_SCROLLABLE); 
@@ -260,7 +266,7 @@ void ui_HomePage_Init() {
 	lv_obj_t * digitBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(digitBtn, 120);
     lv_obj_set_height(digitBtn, 120);
-    lv_obj_set_x(digitBtn, 240);
+    lv_obj_set_x(digitBtn, 255);
     lv_obj_set_y(digitBtn, 270);
     lv_obj_add_flag(digitBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(digitBtn, LV_OBJ_FLAG_SCROLLABLE); 
@@ -272,7 +278,7 @@ void ui_HomePage_Init() {
 	lv_obj_t * TwoBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(TwoBtn, 120);
     lv_obj_set_height(TwoBtn, 120);
-    lv_obj_set_x(TwoBtn, 430);
+    lv_obj_set_x(TwoBtn, 425);
     lv_obj_set_y(TwoBtn, 270);
     lv_obj_add_flag(TwoBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(TwoBtn, LV_OBJ_FLAG_SCROLLABLE); 
@@ -283,7 +289,7 @@ void ui_HomePage_Init() {
 	lv_obj_t * YOLOBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(YOLOBtn, 120);
     lv_obj_set_height(YOLOBtn, 120);
-    lv_obj_set_x(YOLOBtn, 610);
+    lv_obj_set_x(YOLOBtn, 595);
     lv_obj_set_y(YOLOBtn, 270);
     lv_obj_add_flag(YOLOBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(YOLOBtn, LV_OBJ_FLAG_SCROLLABLE); 
@@ -311,7 +317,7 @@ void ui_HomePage_Init() {
     lv_obj_set_style_radius(SetBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(SetBtn, &UI_Img_Home8, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-
+	
 	// load page
     lv_scr_load_anim(homeScreen, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 100, 0, true);
 }

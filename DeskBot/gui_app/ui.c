@@ -1,6 +1,7 @@
 #include "ui.h"
 #include "./common/codeblock_use.h"
 #include "./pages/UI_A_HomePage/UI_A_HomePage.h"
+#include "./pages/UI_B_BotPage/UI_B_BotPage.h"
 
 
 ///////////////////// VARIABLES ////////////////////
@@ -17,16 +18,22 @@ sys_Arguments_t ui_SystemArguments;
 
 ///////////////////// all apps ////////////////////
 
-#define _APP_NUMS 1 // number of apps (including HomePage)
+#define _APP_NUMS 2 // number of apps (including HomePage)
 
-Page_t page_Achieve[_APP_NUMS] = 
+Page_t page_Achieve[_APP_NUMS] =
 {
- 	 {
-        .name = "HomePage",
-        .init = ui_HomePage_Init,
-        .deinit = ui_HomePage_Dinit,
-        .page_obj = NULL
-    },
+	 {
+		.name = "HomePage",
+		.init = ui_HomePage_Init,
+		.deinit = ui_HomePage_Dinit,
+		.page_obj = NULL
+	},
+	{
+		.name = "AIChatPage",
+		.init = ui_AIChatPage_Init,
+		.deinit = ui_AIChatPage_Dinit,
+		.page_obj = NULL,
+	},
 };
 
 ///////////////////// Function ////////////////////
@@ -58,7 +65,7 @@ void ui_msgbox_info(const char * title, const char * text)
 }
 
 static void Sys_Arguments_Init(void) {
-	
+	//系统参数加载
 	if (sys_LoadAgrFromFile(sys_config_path, &ui_SystemArguments) != 0)
 	{
 		//加载文件失败，默认参数赋值
@@ -89,15 +96,60 @@ static void Sys_Arguments_Init(void) {
 		//创建一个文件去保存系统配置
 		Sys_SaveArguments(sys_config_path, &ui_SystemArguments);
 	}
+	//wifi连接
+	ui_SystemArguments.wifi_connected = Sys_GetWifiStatus();
 
-
+	//获取当前时间
+	if (ui_SystemArguments.auto_time == true)
+    {
+        if(Sys_GetTimeFromNtp("ntp.aliyun.com", &ui_SystemArguments.year, &ui_SystemArguments.month, &ui_SystemArguments.day, &ui_SystemArguments.hour, &ui_SystemArguments.minute, NULL))
+        {
+            LV_LOG_WARN("Get time from NTP failed, use system time.");
+        }
+        else
+        {
+            sys_SetTime(ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute, 0);
+            LV_LOG_USER("Auto NTP time year: %d, month: %d, day: %d, hour: %d, minute: %d", ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute);
+        }
+    }else
+    {
+        sys_SetTime(ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute, 0);
+        LV_LOG_USER("Manual time year: %d, month: %d, day: %d, hour: %d, minute: %d", ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute);
+    }
 }
 
 
 
 ///////////////////// timer //////////////////////
 
-
+void Timer_cb(void)
+{
+    static uint16_t time_count2 = 299;
+    time_count2++;
+    // 每5分钟保存一次系统参数
+    if(time_count2 >= 300)
+    {
+        ui_SystemArguments.wifi_connected = Sys_GetWifiStatus();
+        if(ui_SystemArguments.auto_time == true)
+        {
+            if(Sys_GetTimeFromNtp("ntp.aliyun.com", &ui_SystemArguments.year, &ui_SystemArguments.month, &ui_SystemArguments.day, &ui_SystemArguments.hour, &ui_SystemArguments.minute, NULL))
+            {
+                LV_LOG_WARN("Get time from NTP failed, use system time.");
+            }
+            else
+            {
+                sys_SetTime(ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute, 0);
+                LV_LOG_USER("Auto NTP time year: %d, month: %d, day: %d, hour: %d, minute: %d", ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute);
+            }
+        }
+        else
+        {
+            sys_SetTime(ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute, 0);
+        }
+        Sys_SaveArguments(sys_config_path, &ui_SystemArguments);
+        time_count2 = 0; 
+    }
+}
 
 ///////////////////// SCREENS ////////////////////
 
@@ -109,7 +161,7 @@ void ui_init(void)
     lv_disp_t* dispp = lv_display_get_default();
 
     
-    lv_theme_t * theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
+	lv_theme_t* theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
                                                true, LV_FONT_DEFAULT);
     lv_disp_set_theme(dispp, theme);
 
@@ -122,5 +174,6 @@ void ui_init(void)
     }
     Page_Manager_LoadPage(&page_manager, NULL, "HomePage");
 
+    lv_timer_create(Timer_cb, 1000, NULL);
 
 }
