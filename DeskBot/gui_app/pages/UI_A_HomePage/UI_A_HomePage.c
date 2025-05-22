@@ -91,6 +91,16 @@ static void AIChat_event_cb(lv_event_t* e)
 }
 
 
+static void Weather_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
+}
+
 /*******************************初始化和销毁***********************************************/
 
 void ui_HomePage_Init() {
@@ -226,7 +236,9 @@ void ui_HomePage_Init() {
     lv_obj_add_flag(WeatherBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(WeatherBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(WeatherBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_image_src(WeatherBtn, &UI_Img_Home3, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_image_src(WeatherBtn, &UI_Img_Home2, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+	lv_obj_add_event_cb(WeatherBtn, Weather_event_cb, LV_EVENT_CLICKED, "WeatherPage");
 
 	///////////////////////////画板///////////////////////////
 	lv_obj_t * DrawBtn = lv_button_create(App_Button_Container);
@@ -237,7 +249,7 @@ void ui_HomePage_Init() {
     lv_obj_add_flag(DrawBtn, LV_OBJ_FLAG_SCROLL_ON_FOCUS);    
     lv_obj_remove_flag(DrawBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(DrawBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_image_src(DrawBtn, &UI_Img_Home2, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_image_src(DrawBtn, &UI_Img_Home3, LV_PART_MAIN | LV_STATE_DEFAULT);
  
 	///////////////////////////计算器///////////////////////////
 	lv_obj_t * calculatorBtn = lv_button_create(App_Button_Container);

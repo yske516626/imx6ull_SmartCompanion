@@ -2,7 +2,7 @@
 #include "./common/codeblock_use.h"
 #include "./pages/UI_A_HomePage/UI_A_HomePage.h"
 #include "./pages/UI_B_BotPage/UI_B_BotPage.h"
-
+#include "./pages/UI_C_WeatherPage/UI_C_WeatherPage.h"
 
 ///////////////////// VARIABLES ////////////////////
 
@@ -18,7 +18,7 @@ sys_Arguments_t ui_SystemArguments;
 
 ///////////////////// all apps ////////////////////
 
-#define _APP_NUMS 2 // number of apps (including HomePage)
+#define _APP_NUMS 3 // number of apps (including HomePage)
 
 Page_t page_Achieve[_APP_NUMS] =
 {
@@ -32,6 +32,12 @@ Page_t page_Achieve[_APP_NUMS] =
 		.name = "AIChatPage",
 		.init = ui_AIChatPage_Init,
 		.deinit = ui_AIChatPage_Dinit,
+		.page_obj = NULL,
+	},
+	{
+		.name = "WeatherPage",
+		.init = ui_WeatherPage_Init,
+		.deinit = ui_WeatherPage_Dinit,
 		.page_obj = NULL,
 	},
 };
@@ -80,9 +86,9 @@ static void Sys_Arguments_Init(void) {
         ui_SystemArguments.wifi_connected = false;
         ui_SystemArguments.auto_time = true;
         ui_SystemArguments.auto_location = false;
-        strcpy(ui_SystemArguments.location.city, "东城区");
-        strcpy(ui_SystemArguments.location.adcode, "110101");
-        strcpy(ui_SystemArguments.gaode_api_key, "your_amap_key");
+        strcpy(ui_SystemArguments.location.city, "广州市");
+        strcpy(ui_SystemArguments.location.adcode, "440100");
+        strcpy(ui_SystemArguments.gaode_api_key, "gaodekey");
         strcpy(ui_SystemArguments.aichat_app_info.serverIp, "172.32.0.100");
         ui_SystemArguments.aichat_app_info.serverPort = 8765;
         strcpy(ui_SystemArguments.aichat_app_info.headerToken, "123456");
@@ -115,7 +121,31 @@ static void Sys_Arguments_Init(void) {
     {
         sys_SetTime(ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute, 0);
         LV_LOG_USER("Manual time year: %d, month: %d, day: %d, hour: %d, minute: %d", ui_SystemArguments.year, ui_SystemArguments.month, ui_SystemArguments.day, ui_SystemArguments.hour, ui_SystemArguments.minute);
+	}
+
+
+
+	//位置获取
+	 if(ui_SystemArguments.auto_location == true)  //启动了自动获取
+	 {
+		 //联网状态可以自动获取
+		 if (Sys_GetLocation(&ui_SystemArguments.location, ui_SystemArguments.gaode_api_key) == 0)
+		 {
+			 LV_LOG_USER("Auto location city: %s, adcode: %s", ui_SystemArguments.location.city, ui_SystemArguments.location.adcode);
+        }else //自动获取失败，直接根据系统参数文件中的acode来得到城市
+        {
+            LV_LOG_WARN("Get location by IP failed, use system location.");
+            Sys_Get_City_Name_By_Adcode(city_adcode_path, ui_SystemArguments.location.adcode);
+            strcpy(ui_SystemArguments.location.city, sys_location_city);
+            LV_LOG_USER("Auto fail, Manual location city: %s, adcode: %s", ui_SystemArguments.location.city, ui_SystemArguments.location.adcode);
+        }
+    }else
+    {  //非自动获取，直接指定的城市的acode
+        Sys_Get_City_Name_By_Adcode(city_adcode_path, ui_SystemArguments.location.adcode);
+		strcpy(ui_SystemArguments.location.city, sys_location_city);
+		LV_LOG_USER("Manual location city: %s, adcode: %s", ui_SystemArguments.location.city, ui_SystemArguments.location.adcode);
     }
+    LV_LOG_USER("System para init done.");
 }
 
 

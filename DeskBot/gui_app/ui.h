@@ -35,8 +35,13 @@ LV_IMG_DECLARE(UI_Img_Home8)
 LV_IMG_DECLARE(UI_Img_AIChatQuestion120)
 LV_IMG_DECLARE(UI_Img_AIChatThink120)
 LV_IMG_DECLARE(UI_Img_AIChatHand120)
+LV_IMG_DECLARE(UI_Img_WeatherCloud)
+LV_IMG_DECLARE(UI_Img_WeatherRain)
+LV_IMG_DECLARE(UI_Img_WeatherSun)
 
 LV_FONT_DECLARE(ui_icon_HomeWifi40)
+LV_FONT_DECLARE(ui_icon_HumiAndWind72)
+LV_FONT_DECLARE(ui_font_HeiTi72)
 
 // ui apps data
 //typedef lv_lib_pm_page_t ui_app_data_t;

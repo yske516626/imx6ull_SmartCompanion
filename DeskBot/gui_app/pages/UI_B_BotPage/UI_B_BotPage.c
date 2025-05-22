@@ -366,6 +366,22 @@ static void AIChatTimer_cb(void)
 	
 }
 
+
+void AIChatPage_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_GESTURE &&  lv_indev_get_gesture_dir(lv_indev_active()) == LV_DIR_LEFT) {
+        lv_indev_wait_release(lv_indev_active());
+    }
+    if(event_code == LV_EVENT_GESTURE &&  lv_indev_get_gesture_dir(lv_indev_active()) == LV_DIR_RIGHT) {
+        lv_indev_wait_release(lv_indev_active());
+        ChatBotPage_Reset();
+        UseInterface_AIChatStop();
+        Page_Manager_RetPrePage(&page_manager);
+    }
+}
+
 /*******************************初始化和销毁***********************************************/
 
 
@@ -479,7 +495,8 @@ void ui_AIChatPage_Init()
     lv_image_set_rotation(handImg, 450);
     lv_obj_set_style_opa(handImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    
+	lv_obj_add_event_cb(AIChatPage, AIChatPage_event_cb, LV_EVENT_ALL, NULL);
+
 	AIChatTimer = lv_timer_create(AIChatTimer_cb, 250, NULL);
 
 
@@ -491,5 +508,6 @@ void ui_AIChatPage_Init()
 
 void ui_AIChatPage_Dinit()
 {
-
+	lv_timer_delete(AIChatTimer);
+    return;
 }

@@ -214,7 +214,7 @@ private:
 	std::atomic<bool> threadsStopFlag{false};  // 初始化一个原子布尔变量，初始值为 false
 
 	std::string asrText;
-	bool tts_Is_completed = false;
+	bool tts_Is_completed = false;  //标记语音转文本操作是否完成
 	bool conversation_Is_completed = false;  //交流是否完成
 
 
@@ -223,7 +223,6 @@ private:
 	std::atomic<bool> stateRunning {false};  //状态是否开始运行
 	std::thread stateRunning_Thread;  //状态运行线程
 
-	bool ttsCompleted = false;
 	////////////////////////////////////function///////////////////////////////////////////////////
 	/**
 	 * 

@@ -48,7 +48,7 @@ typedef struct {
 
 extern const char * sys_config_path;  //系统配置文件路径
 extern const char * city_adcode_path; //城市adcode对应表文件路径与可执行文件同目录
-
+extern char sys_location_city[36];
 	
 // 设置系统时间
 int sys_SetTime(int year_, int month_, int day_, int hour_, int minute_, int second_);
@@ -65,8 +65,17 @@ int Sys_SaveArguments(const char* filepath_, const sys_Arguments_t* params_);
 //获取设备wifi状态
 bool Sys_GetWifiStatus(void);
 
+// 使用蔡勒公式计算星期几，0代表周日，1代表周一，...，6代表周六
+int Sys_Get_Day_Of_Week(int year_, int month_, int day_);
+
 //获取当前时间
 int Sys_GetTimeFromNtp(const char* ntpServer_, int* year_, int* month_, int* day_, int* hour_, int* minute_, int* second_);
+
+//获取位置，只获取到市级，具体到区级的话字体需要很多，RAM不好控制
+int Sys_GetLocation(LocationInfo_t* location, const char* api_key);
+
+
+const char* Sys_Get_City_Name_By_Adcode(const char* filepath, const char* target_adcode);
 #ifdef __cplusplus
 } /*extern "C"*/
 #endif
