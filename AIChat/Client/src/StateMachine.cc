@@ -51,9 +51,10 @@ bool StateMachine::EventHandle(int event)
 {
 	//取出当前状态的状态转换字典：unordered_map<int, int>
 	auto& handleTransition = transition[cutrrentState];
-	if (handleTransition.find(event) != handleTransition.end())
+	if (handleTransition.find(event) == handleTransition.end())  
 	{
-		USER_LOG_INFO("Event:%d the transition status of the event was not found",event);
+		//找到尾部还是没找到该状态遇到该事件所要转换的状态
+		USER_LOG_INFO("Event:%d the transition status of the event was not found", event);
 		return false;
 	}
 	int nextState = handleTransition[event]; //找到键值（事件event）对应的value（要转换的状态）

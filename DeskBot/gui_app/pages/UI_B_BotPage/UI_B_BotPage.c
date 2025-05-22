@@ -81,17 +81,6 @@ static void Animation_IDLE2(void)
 {
     ChatBotPage_Reset();
     chatArgument.anim_complete = false;
-    int16_t VerPanel_y_pos_now = 0;
-    int16_t MainPanel_y_pos_now = -25;
-    lv_lib_anim_user_animation(eyesPanel, 0, 500, VerPanel_y_pos_now, VerPanel_y_pos_now-20, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_y, NULL);
-    VerPanel_y_pos_now -= 20;
-    lv_lib_anim_user_animation(eyesPanel, 2500, 500, VerPanel_y_pos_now, VerPanel_y_pos_now+20, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_y, NULL);
-    VerPanel_y_pos_now += 20;
-
-    lv_lib_anim_user_animation(eyesPanel, 0, 500, MainPanel_y_pos_now, MainPanel_y_pos_now+20, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_y, NULL);
-    MainPanel_y_pos_now += 20;
-    lv_lib_anim_user_animation(eyesPanel, 2500, 500, MainPanel_y_pos_now, MainPanel_y_pos_now-20, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_y, NULL);
-    MainPanel_y_pos_now -= 20;
 
     lv_lib_anim_user_animation(thinkImg, 0, 500, -100, 100, 0, 750, 0, 3, lv_anim_path_ease_in_out, lv_lib_anim_callback_set_image_angle, NULL);
     lv_lib_anim_user_animation(thinkImg, 0, 500, 0, 255, 0, 0, 0, 0, lv_anim_path_linear, lv_lib_anim_callback_set_opacity, NULL);
@@ -126,7 +115,9 @@ static void Animation_LISTEN(void)
 
     lv_lib_anim_user_animation(eyeRight, 3000, 100, eye_width_now, eye_width_now+30, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_width, NULL);
     lv_lib_anim_user_animation(eyeLeft, 3000, 100, eye_width_now, eye_width_now+30, 0, 0, 0, 0, lv_anim_path_ease_out, lv_lib_anim_callback_set_width, _anim_complete_cb);
-    eye_width_now += 60;
+	eye_width_now += 60;
+
+	// chatArgument.last_state = -1; //仿真测试动画
 }
 
 static void Animation_THINK(void) {
@@ -137,7 +128,7 @@ static void Animation_THINK(void) {
     chatArgument.anim_complete = false;
 
     lv_lib_anim_user_animation(handImg, 0, 500, 0, 255, 0, 0, 0, 0, lv_anim_path_linear, lv_lib_anim_callback_set_opacity, NULL);
-    lv_lib_anim_user_animation(handImg, 0, 500, -250, -150, 0, 750, 0, 2, lv_anim_path_ease_in_out, lv_lib_anim_callback_set_image_angle, NULL);
+    lv_lib_anim_user_animation(handImg, 0, 500, 450, 600, 0, 750, 0, 2, lv_anim_path_ease_in_out, lv_lib_anim_callback_set_image_angle, NULL);
     lv_lib_anim_user_animation(questionImg, 1500, 500, 255, 0, 0, 0, 0, 0, lv_anim_path_linear, lv_lib_anim_callback_set_opacity, NULL);
     lv_lib_anim_user_animation(handImg, 1500, 500, 255, 0, 0, 0, 0, 0, lv_anim_path_linear, lv_lib_anim_callback_set_opacity, NULL);
 
@@ -156,6 +147,8 @@ static void Animation_THINK(void) {
     lv_lib_anim_user_animation(eyeLeft, 2000, 100, eye_width_now, eye_width_now+30, 0, 100, 0, 1, lv_anim_path_ease_out, lv_lib_anim_callback_set_width, NULL);
     lv_lib_anim_user_animation(eyeRight, 2000, 100, eye_hight_now, eye_hight_now-70, 0, 100, 0, 1, lv_anim_path_ease_out, lv_lib_anim_callback_set_hight, NULL);
     lv_lib_anim_user_animation(eyeLeft, 2000, 100, eye_hight_now, eye_hight_now-70, 0, 100, 0, 1, lv_anim_path_ease_out, lv_lib_anim_callback_set_hight, _anim_complete_cb);
+
+	// chatArgument.last_state = -1; //仿真测试动画
 }
 
 static void Animation_SPEAK(void)
@@ -178,6 +171,7 @@ static void Animation_SPEAK(void)
     lv_lib_anim_user_animation(mouth, 1500, 150, mouth_y_pos_now, mouth_y_pos_now-20, 0, 150, 0, 4, lv_anim_path_ease_out, lv_lib_anim_callback_set_y, NULL);
     lv_lib_anim_user_animation(mouthPanel, 1500, 150, mouth_panel_y_pos_now, mouth_panel_y_pos_now+20, 0, 150, 0, 4, lv_anim_path_ease_out, lv_lib_anim_callback_set_y, _anim_complete_cb);
 
+	// chatArgument.last_state = -1; //仿真测试动画
 }
 
 /*******************************内部静态接口***********************************************/
@@ -205,11 +199,11 @@ static void ChatBotPage_Reset(void)
     lv_obj_set_style_bg_opa(mouth, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(mouthPanel, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // lv_obj_set_style_opa(QuestionImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_opa(questionImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // lv_obj_set_style_opa(thinkImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_opa(thinkImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    // lv_obj_set_style_opa(HandImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_opa(handImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
 }
 
 static void* AIChat_Thread_Func(void* arg) {
@@ -309,8 +303,8 @@ static void AIChatTimer_cb(void)
     }
     // 0-FAULT故障, 1-STARTUP启动, 2-STOP停止
     // 3-IDLE空闲, 4-LISTIN倾听, 5-THINK思考, 6-SPEAK说话
-    int state = UseInterface_AIChatState();
-    if(state != chatArgument.last_state)
+	int state = UseInterface_AIChatState();
+	if (state != chatArgument.last_state)
     {
         chatArgument.last_state = state;
         chatArgument.anim_complete = true;  //动画标记完成
@@ -354,8 +348,8 @@ static void AIChatTimer_cb(void)
 			
             // listening
             else if(state == 4)
-            {
-                Animation_LISTEN();
+			{
+				Animation_LISTEN();
             }
             //thinking
             else if(state == 5)
@@ -379,6 +373,7 @@ void ui_AIChatPage_Init()
 {
 	chatArgument.first_enter = true;
     lv_obj_t * AIChatPage = lv_obj_create(NULL);
+	lv_obj_set_style_bg_color(AIChatPage, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);  //全黑背景
     lv_obj_remove_flag(AIChatPage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
 	////////////////////////////眼睛///////////////////////////////////////////////
@@ -455,7 +450,7 @@ void ui_AIChatPage_Init()
     lv_image_set_src(thinkImg, &UI_Img_AIChatThink120);
     lv_obj_set_width(thinkImg, LV_SIZE_CONTENT);   
     lv_obj_set_height(thinkImg, LV_SIZE_CONTENT);   
-    lv_obj_set_x(thinkImg, 240);
+    lv_obj_set_x(thinkImg, 300);
     lv_obj_set_y(thinkImg, -160);
     lv_obj_set_align(thinkImg, LV_ALIGN_CENTER);
     lv_obj_remove_flag(thinkImg, LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_CLICKABLE);      /// Flags
@@ -466,7 +461,7 @@ void ui_AIChatPage_Init()
     lv_image_set_src(questionImg, &UI_Img_AIChatQuestion120);
     lv_obj_set_width(questionImg, LV_SIZE_CONTENT);   
     lv_obj_set_height(questionImg, LV_SIZE_CONTENT);   
-    lv_obj_set_x(questionImg, 250);
+    lv_obj_set_x(questionImg, 300);
     lv_obj_set_y(questionImg, -160);
     lv_obj_set_align(questionImg, LV_ALIGN_CENTER);
     lv_obj_remove_flag(questionImg, LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_CLICKABLE);      /// Flags
@@ -481,7 +476,7 @@ void ui_AIChatPage_Init()
     lv_obj_set_y(handImg, 110);
     lv_obj_set_align(handImg, LV_ALIGN_CENTER);
     lv_obj_remove_flag(handImg, LV_OBJ_FLAG_SCROLLABLE | LV_OBJ_FLAG_CLICKABLE);      /// Flags
-    lv_image_set_rotation(handImg, 45);
+    lv_image_set_rotation(handImg, 450);
     lv_obj_set_style_opa(handImg, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     

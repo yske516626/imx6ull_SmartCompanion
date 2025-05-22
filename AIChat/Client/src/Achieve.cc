@@ -101,7 +101,7 @@ int Achieve::ProcessMessages_TTS(const Json::Value& root) {
         std::string stateStr = state.asString();
         if (stateStr == "end") {
             USER_LOG_INFO("Received TTS end.");
-            tts_Is_completed = true;
+            tts_Is_completed = true;  //标记语音转文本换成
         }
     }
     const Json::Value conversation = root["conversation"];
@@ -205,10 +205,10 @@ void Achieve::Run() {
 		state.Add_TransitionEvent(static_cast<int>(State::STARTUP), static_cast<int>(Event::STARTUP_DONE), static_cast<int>(State::IDLE));
 		state.Add_TransitionEvent(static_cast<int>(State::IDLE), static_cast<int>(Event::WAKE_DETECTED), static_cast<int>(State::SPEAK));
 		state.Add_TransitionEvent(static_cast<int>(State::LISTEN), static_cast<int>(Event::VAD_NO_SPEECH), static_cast<int>(State::IDLE));
-		state.Add_TransitionEvent(static_cast<int>(State::LISTEN), static_cast<int>(Event::VAD_END), static_cast<int>(State::SPEAK));
+		state.Add_TransitionEvent(static_cast<int>(State::LISTEN), static_cast<int>(Event::VAD_END), static_cast<int>(State::THINK));
 		state.Add_TransitionEvent(static_cast<int>(State::THINK), static_cast<int>(Event::PLAYING_MSG_REVEIVED), static_cast<int>(State::SPEAK));
 		state.Add_TransitionEvent(static_cast<int>(State::SPEAK), static_cast<int>(Event::SPEAKING_EDN), static_cast<int>(State::LISTEN));
-		state.Add_TransitionEvent(static_cast<int>(State::LISTEN), static_cast<int>(Event::CONVERSATION_END), static_cast<int>(State::IDLE));
+		state.Add_TransitionEvent(static_cast<int>(State::SPEAK), static_cast<int>(Event::CONVERSATION_END), static_cast<int>(State::IDLE));
 		state.Add_TransitionEvent(-1, static_cast<int>(Event::FAULT_HAPPEN), static_cast<int>(State::FAULT));
 		state.Add_TransitionEvent(-1, static_cast<int>(Event::TO_STOP), static_cast<int>(State::STOP));
 		state.Add_TransitionEvent(static_cast<int>(State::FAULT), static_cast<int>(Event::FAULT_SOLVED), static_cast<int>(State::IDLE));
@@ -223,6 +223,7 @@ void Achieve::Run() {
 				int event_opt = eventQueue.QueuePop(); 
 				// 事件queue处理
 				if (event_opt != -1) {
+					USER_LOG_INFO("Event:%d eventQueue Pop",event_opt);
 					state.EventHandle(event_opt); //进行状态的装欢
 				}
 			}
@@ -361,7 +362,7 @@ void Achieve::Idle_Exit() {
         audio.PCMFrame_Push_PlayQueue(frame);  //将退出空闲状态的音频帧放进待播放队列playQueue
         audioQueue.pop();
     }
-    ttsCompleted = true;  //标记文字转语音生成完成
+    tts_Is_completed = true;  //标记文字转语音生成完成
     std::this_thread::sleep_for(std::chrono::milliseconds(200));
     USER_LOG_INFO("Idle exit.");
 }
@@ -428,7 +429,7 @@ void Achieve::SpeakState_Run()
 {
 	USER_LOG_INFO("Speak state run.");
     while(stateRunning.load() == true) {
-        if(ttsCompleted && audio.playbackQueueIsEmpty()) {
+        if(tts_Is_completed && audio.playbackQueueIsEmpty()) {
             std::this_thread::sleep_for(std::chrono::milliseconds(500));
             USER_LOG_INFO("Speak end.");
             if(conversation_Is_completed == false) {
@@ -436,7 +437,7 @@ void Achieve::SpeakState_Run()
             } else {
                 eventQueue.QueuePush(static_cast<int>(Event::CONVERSATION_END));
             }
-            ttsCompleted = false; //标记语音转文本未结束，还在说话中
+            tts_Is_completed = false; //标记语音转文本未结束，还在说话中
             conversation_Is_completed = false; 
             break;
         }
