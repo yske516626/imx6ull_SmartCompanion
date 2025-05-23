@@ -3,6 +3,8 @@
 #include "./pages/UI_A_HomePage/UI_A_HomePage.h"
 #include "./pages/UI_B_BotPage/UI_B_BotPage.h"
 #include "./pages/UI_C_WeatherPage/UI_C_WeatherPage.h"
+#include "./pages/UI_D_DrawPage/UI_D_DrawPage.h"
+#include "./pages/UI_E_CalculatorPage/UI_E_CalculatorPage.h"
 
 ///////////////////// VARIABLES ////////////////////
 
@@ -18,7 +20,7 @@ sys_Arguments_t ui_SystemArguments;
 
 ///////////////////// all apps ////////////////////
 
-#define _APP_NUMS 3 // number of apps (including HomePage)
+#define _APP_NUMS 5 // number of apps (including HomePage)
 
 Page_t page_Achieve[_APP_NUMS] =
 {
@@ -38,6 +40,18 @@ Page_t page_Achieve[_APP_NUMS] =
 		.name = "WeatherPage",
 		.init = ui_WeatherPage_Init,
 		.deinit = ui_WeatherPage_Dinit,
+		.page_obj = NULL,
+	},
+	{
+		.name = "DrawPage",
+		.init = ui_DrawPage_Init,
+		.deinit = ui_DrawPage_Dinit,
+		.page_obj = NULL,
+	},
+	{
+		.name = "CalculatorPage",
+		.init = ui_CalculatorPage_Init,
+		.deinit = ui_CalculatorPage_Dinit,
 		.page_obj = NULL,
 	},
 };

@@ -101,6 +101,27 @@ static void Weather_event_cb(lv_event_t* e)
     }
 }
 
+
+static void Draw_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
+}
+
+static void Calculator_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+		LV_LOG_WARN("Load Page: Calculator.");
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
+}
 /*******************************初始化和销毁***********************************************/
 
 void ui_HomePage_Init() {
@@ -250,7 +271,9 @@ void ui_HomePage_Init() {
     lv_obj_remove_flag(DrawBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(DrawBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(DrawBtn, &UI_Img_Home3, LV_PART_MAIN | LV_STATE_DEFAULT);
- 
+
+	lv_obj_add_event_cb(DrawBtn, Draw_event_cb, LV_EVENT_CLICKED, "DrawPage");
+
 	///////////////////////////计算器///////////////////////////
 	lv_obj_t * calculatorBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(calculatorBtn, 120);
@@ -261,7 +284,7 @@ void ui_HomePage_Init() {
     lv_obj_remove_flag(calculatorBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(calculatorBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(calculatorBtn, &UI_Img_Home4, LV_PART_MAIN | LV_STATE_DEFAULT);
-
+	lv_obj_add_event_cb(calculatorBtn, Calculator_event_cb, LV_EVENT_CLICKED, "CalculatorPage");
 
 	///////////////////////////木鱼///////////////////////////
 	lv_obj_t * MuYuBtn = lv_button_create(App_Button_Container);

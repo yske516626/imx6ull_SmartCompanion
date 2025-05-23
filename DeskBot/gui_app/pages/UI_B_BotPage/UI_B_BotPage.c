@@ -290,7 +290,7 @@ static int UseInterface_AIChatInit(void)
     return 0;
 }
 /*******************************event callback***********************************************/
-static void AIChatTimer_cb(void)
+static void AIChatTimer_cb(lv_timer_t* t)
 {
 	if(chatArgument.first_enter)
     {
