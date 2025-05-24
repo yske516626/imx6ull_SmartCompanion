@@ -74,8 +74,14 @@ int Sys_GetTimeFromNtp(const char* ntpServer_, int* year_, int* month_, int* day
 //获取位置，只获取到市级，具体到区级的话字体需要很多，RAM不好控制
 int Sys_GetLocation(LocationInfo_t* location, const char* api_key);
 
-
+//通过adcode获取城市名称，不联网状态下
 const char* Sys_Get_City_Name_By_Adcode(const char* filepath, const char* target_adcode);
+
+//设置音量
+int Sys_SetVolume(int level);
+
+//设置亮度
+int Sys_SetBrightness(int brightness);
 #ifdef __cplusplus
 } /*extern "C"*/
 #endif

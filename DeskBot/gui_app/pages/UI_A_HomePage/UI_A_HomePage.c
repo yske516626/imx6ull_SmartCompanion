@@ -21,7 +21,7 @@ lv_obj_t * scrollDots[PAGE_NUMBER_MAX];  //下标点，标识当前所处页面
 lv_timer_t * homeTimer;
 lv_obj_t * wifiLabel;
 lv_obj_t* noWifiLabel;
-
+lv_obj_t* TimeLabel;
 /*******************************内部静态接口***********************************************/
 
 static void _ui_anim_completed_cb()
@@ -122,6 +122,80 @@ static void Calculator_event_cb(lv_event_t* e)
         Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
     }
 }
+
+static void Muyu_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+		LV_LOG_WARN("Load Page: Muyu.");
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
+}
+static void Digit_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+		LV_LOG_WARN("Load Page: Digit.");
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
+}
+
+static void Two_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+		LV_LOG_WARN("Load Page: 2048.");
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
+}
+
+
+static void Set_event_cb(lv_event_t* e)
+{
+	lv_event_code_t event_code = lv_event_get_code(e);
+    char * pagename = lv_event_get_user_data(e);
+    if(event_code == LV_EVENT_CLICKED && !desktop_data.scroll_busy) 
+    {
+		LV_LOG_WARN("Load Page: Set.");
+        Page_Manager_LoadPage(&page_manager, NULL, pagename);  //加载新的页面，通过名字查找
+    }
+}
+static void ui_home_timer_cb(lv_timer_t *timer) {
+
+	lv_obj_t * timelabel = lv_timer_get_user_data(timer);
+    int year; int month; int day; int hour; int minute; int second;
+    sys_GetTime(&year, &month, &day, &hour, &minute, &second);
+    if(minute!=ui_SystemArguments.minute)
+    {
+        char time_str[6];
+        sprintf(time_str, "%02d:%02d", hour, minute);
+        lv_label_set_text(timelabel, time_str);
+        ui_SystemArguments.year = year;
+        ui_SystemArguments.month = month;
+        ui_SystemArguments.day = day;
+        ui_SystemArguments.hour = hour;
+        ui_SystemArguments.minute = minute;
+    }
+
+    if(ui_SystemArguments.wifi_connected)
+    {
+        lv_obj_remove_flag(wifiLabel, LV_OBJ_FLAG_HIDDEN);     /// Flags
+        lv_obj_add_flag(wifiLabel, LV_OBJ_FLAG_HIDDEN);     /// Flags
+    }
+    else
+    {
+        lv_obj_remove_flag(wifiLabel, LV_OBJ_FLAG_HIDDEN);     /// Flags
+        lv_obj_add_flag(wifiLabel, LV_OBJ_FLAG_HIDDEN);     /// Flags
+    }
+}
+
+
 /*******************************初始化和销毁***********************************************/
 
 void ui_HomePage_Init() {
@@ -131,6 +205,8 @@ void ui_HomePage_Init() {
 	lv_obj_set_style_bg_color(homeScreen, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);  //全黑背景
 	lv_obj_remove_flag(homeScreen, LV_OBJ_FLAG_SCROLLABLE);
 
+    desktop_data.index =0;
+        
 
 	//获取时间
 	int year; int month; int day; int hour; int minute; int second;
@@ -142,7 +218,7 @@ void ui_HomePage_Init() {
 	ui_SystemArguments.day = day;
 
 	// ----- 时间标签
-	lv_obj_t* TimeLabel = lv_label_create(homeScreen);
+	TimeLabel = lv_label_create(homeScreen);
     lv_obj_set_width(TimeLabel, LV_SIZE_CONTENT); 
 	lv_obj_set_height(TimeLabel, LV_SIZE_CONTENT);
 	lv_obj_set_y(TimeLabel, 11);  //下移动11
@@ -296,6 +372,7 @@ void ui_HomePage_Init() {
     lv_obj_remove_flag(MuYuBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(MuYuBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(MuYuBtn, &UI_Img_Home5, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_add_event_cb(MuYuBtn, Muyu_event_cb, LV_EVENT_CLICKED, "MuyuPage");
 
 	///////////////////////////翻牌猜数字///////////////////////////
 	lv_obj_t * digitBtn = lv_button_create(App_Button_Container);
@@ -307,6 +384,7 @@ void ui_HomePage_Init() {
     lv_obj_remove_flag(digitBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(digitBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(digitBtn, &UI_Img_Home6, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_add_event_cb(digitBtn, Digit_event_cb, LV_EVENT_CLICKED, "DigitPage");
 
 
 	///////////////////////////2048//////////////////////////
@@ -319,7 +397,9 @@ void ui_HomePage_Init() {
     lv_obj_remove_flag(TwoBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(TwoBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(TwoBtn, &UI_Img_Home7, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_add_event_cb(TwoBtn, Two_event_cb, LV_EVENT_CLICKED, "TwoPage");
 
+	
 	///////////////////////////YOLO//////////////////////////
 	lv_obj_t * YOLOBtn = lv_button_create(App_Button_Container);
     lv_obj_set_width(YOLOBtn, 120);
@@ -351,15 +431,18 @@ void ui_HomePage_Init() {
     lv_obj_remove_flag(SetBtn, LV_OBJ_FLAG_SCROLLABLE); 
     lv_obj_set_style_radius(SetBtn, 30, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_image_src(SetBtn, &UI_Img_Home8, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_add_event_cb(SetBtn, Set_event_cb, LV_EVENT_CLICKED, "SetPage");
 
-	
+	homeTimer = lv_timer_create(ui_home_timer_cb, 5000, TimeLabel);
+
 	// load page
     lv_scr_load_anim(homeScreen, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 100, 0, true);
 }
 
 
 void ui_HomePage_Dinit() {
-	
+	lv_timer_delete(homeTimer);
+    return;
 }
 
 

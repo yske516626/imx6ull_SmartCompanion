@@ -5,6 +5,11 @@
 #include "./pages/UI_C_WeatherPage/UI_C_WeatherPage.h"
 #include "./pages/UI_D_DrawPage/UI_D_DrawPage.h"
 #include "./pages/UI_E_CalculatorPage/UI_E_CalculatorPage.h"
+#include "./pages/UI_F_MuyuPage/UI_F_MuyuPage.h"
+#include "./pages/UI_G_DigitPage/UI_G_DigitPage.h"
+#include "./pages/UI_H_TwoPage/UI_H_TwoPage.h"
+#include "./pages/UI_I_YoloPage/UI_I_YoloPage.h"
+#include "./pages/UI_J_SetPage/UI_J_SetPage.h"
 
 ///////////////////// VARIABLES ////////////////////
 
@@ -20,11 +25,11 @@ sys_Arguments_t ui_SystemArguments;
 
 ///////////////////// all apps ////////////////////
 
-#define _APP_NUMS 5 // number of apps (including HomePage)
+#define _APP_NUMS 11 // number of apps (including HomePage)
 
 Page_t page_Achieve[_APP_NUMS] =
 {
-	 {
+	{
 		.name = "HomePage",
 		.init = ui_HomePage_Init,
 		.deinit = ui_HomePage_Dinit,
@@ -54,6 +59,42 @@ Page_t page_Achieve[_APP_NUMS] =
 		.deinit = ui_CalculatorPage_Dinit,
 		.page_obj = NULL,
 	},
+	{
+		.name = "MuyuPage",
+		.init = ui_MuyuPage_Init,
+		.deinit = ui_MuyuPage_Dinit,
+		.page_obj = NULL,
+	},
+	{
+		.name = "DigitPage",
+		.init = ui_DigitPage_Init,
+		.deinit = ui_DigitPage_Dinit,
+		.page_obj = NULL,
+	},
+	{
+		.name = "TwoPage",
+		.init = ui_TwoPage_Init,
+		.deinit = ui_TwoPage_Dinit,
+		.page_obj = NULL,
+	},
+	{
+        .name = "YoloPage",
+        .init = NULL,
+        .deinit = NULL,
+        .page_obj = NULL,
+	},
+	{
+        .name = "SetPage",
+        .init = ui_SetPage_Init,
+        .deinit = ui_SetPage_Dinit,
+        .page_obj = NULL ,
+	},
+	{
+        .name = "CalendarPage",
+        .init = NULL,
+        .deinit = NULL,
+        .page_obj = NULL,
+    },
 };
 
 ///////////////////// Function ////////////////////
