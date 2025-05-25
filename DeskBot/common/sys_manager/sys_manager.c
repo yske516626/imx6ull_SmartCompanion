@@ -95,7 +95,7 @@ static const char* find_city_name(struct json_object *districts, const char *tar
 
             // 只判断 level == "city" 的节点
             if (strcmp(level_str, "city") == 0 && strcmp(adcode_str, target_adcode) == 0) {
-				//printf("city:%s", json_object_get_string(name_obj));
+				// printf("city:%s", json_object_get_string(name_obj));
 				return json_object_get_string(name_obj);  // 只返回城市名
 
 			}
@@ -568,14 +568,18 @@ int Sys_GetLocation(LocationInfo_t* location, const char *api_key) {
     curl_easy_setopt(curl_handle, CURLOPT_CAINFO, "cacert.pem");
 
     // 设置超时时间为5秒
-    curl_easy_setopt(curl_handle, CURLOPT_TIMEOUT, 5L);
+    curl_easy_setopt(curl_handle, CURLOPT_TIMEOUT, 10L);
 
     res = curl_easy_perform(curl_handle);
 
-    if(res != CURLE_OK) {
-        fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
-        free(response_string);
-        curl_easy_cleanup(curl_handle);
+
+	if (res != CURLE_OK) {
+		fprintf(stderr, "curl_easy_perform() failed with code = %d (%s)\n", res, curl_easy_strerror(res));
+		fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+
+		
+		free(response_string);
+		curl_easy_cleanup(curl_handle);
         curl_global_cleanup();
         return -1;
     }
@@ -638,14 +642,17 @@ const char* Sys_Get_City_Name_By_Adcode(const char *filepath, const char *target
     if (!fp) {
         fprintf(stderr, "Error opening file: %s\n", filepath);
         return NULL;
-    }
+	}
+
 
     // 读取整个 JSON 文件内容
     fseek(fp, 0, SEEK_END);
     long file_size = ftell(fp);
-    rewind(fp);
+	rewind(fp);
+	
 
-    char *json_data = (char *)malloc(file_size + 1);
+
+	char* json_data = (char*)malloc(file_size + 1);
     if (!json_data) {
         fclose(fp);
         fprintf(stderr, "Memory allocation failed!\n");
@@ -656,24 +663,30 @@ const char* Sys_Get_City_Name_By_Adcode(const char *filepath, const char *target
     json_data[file_size] = '\0';
     fclose(fp);
 
-    // 解析 JSON
-    struct json_object *root = json_tokener_parse(json_data);
+	// 解析 JSON
+	struct json_object* root = json_tokener_parse(json_data);
     free(json_data);  // 释放 JSON 读取的内存
     if (!root) {
         fprintf(stderr, "Error parsing JSON file!\n");
         return NULL;
     }
-
     struct json_object *districts;
     if (!json_object_object_get_ex(root, "districts", &districts)) {
         fprintf(stderr, "Invalid JSON format: missing 'districts' array.\n");
         json_object_put(root);  // 释放 JSON 对象
         return NULL;
     }
-
+	// fprintf(stderr, "target_adcode:%s\n",target_adcode);
     // 递归查找
 	const char* result = find_city_name(districts, target_adcode);
-	strcpy(sys_location_city, result);  //赋值给全局，防止有是否root后野指针
+	if (result != NULL)
+	{
+		strcpy(sys_location_city, result);  //赋值给全局，防止释放root后野指针
+		strncpy(sys_location_city, result, sizeof(sys_location_city) - 1);
+		sys_location_city[sizeof(sys_location_city) - 1] = '\0';
+	}else
+		strcpy(sys_location_city, "广州市\0");  
+	// fprintf(stderr, "result:%s.\n", result);
 	// 释放 JSON 对象
     json_object_put(root);
     return "true";

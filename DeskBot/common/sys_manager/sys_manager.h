@@ -48,7 +48,7 @@ typedef struct {
 
 extern const char * sys_config_path;  //系统配置文件路径
 extern const char * city_adcode_path; //城市adcode对应表文件路径与可执行文件同目录
-extern char sys_location_city[36];
+extern char sys_location_city[36];  //存放获取到的城市名称：为了防止释放json发生段错误
 	
 // 设置系统时间
 int sys_SetTime(int year_, int month_, int day_, int hour_, int minute_, int second_);

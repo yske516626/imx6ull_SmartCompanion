@@ -52,7 +52,7 @@ Page_t SetPage_Manager[SetPageNum] =
 		.page_obj = NULL
 	},
 };
-
+lv_obj_t * ui_LabelLocationName;
 /*******************************内部静态接口***********************************************/
 
 
@@ -169,6 +169,69 @@ static void date_set_confirm_cb(lv_event_t *e) {
     }
 
 }
+/////////////////////////////Location设置分页////////////////////////////////////
+
+static void AutoLcation_event_cb(lv_event_t* e) {
+	lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    lv_obj_t * ui_LocationAuto = lv_event_get_user_data(e);
+
+    if(event_code == LV_EVENT_VALUE_CHANGED &&  lv_obj_has_state(target, LV_STATE_CHECKED)) {
+        lv_obj_add_flag(ui_LocationAuto, LV_OBJ_FLAG_HIDDEN);
+        ui_SystemArguments.auto_location = true;
+        // get location via network
+        if(Sys_GetLocation(&ui_SystemArguments.location, ui_SystemArguments.gaode_api_key) == 0) {
+            lv_label_set_text(ui_LabelLocationName, ui_SystemArguments.location.city);
+            // show msg box
+            ui_msgbox_info("Note", "Auto Location get success.");
+        }
+        else {
+            // show msg box
+            ui_msgbox_info("Error", "Auto Location get failed.");
+        }
+    }
+    if(event_code == LV_EVENT_VALUE_CHANGED &&  !lv_obj_has_state(target, LV_STATE_CHECKED)) {
+        lv_obj_remove_flag(ui_LocationAuto, LV_OBJ_FLAG_HIDDEN);  //取消隐藏
+        ui_SystemArguments.auto_location = false;
+    }
+}
+
+
+//自主设置定位
+static void textarea_event_handler(lv_event_t* e)
+{
+    lv_obj_t * ta = lv_event_get_target(e);
+
+	strcpy(ui_SystemArguments.location.adcode, lv_textarea_get_text(ta)); //acode
+	Sys_Get_City_Name_By_Adcode(city_adcode_path, ui_SystemArguments.location.adcode);
+	// LV_LOG_USER("NotoLocation adcode is: %s", ui_SystemArguments.location.adcode);
+
+	if (sys_location_city) {
+		strcpy(ui_SystemArguments.location.city, sys_location_city);
+		// show msg box
+        ui_msgbox_info("Note", "Location set success.");
+	}else {
+        // show msg box
+		ui_msgbox_info("Error", "Location set failed.");
+		
+	}
+}
+
+static void btnm_event_handler(lv_event_t* e)
+{
+    lv_obj_t * obj = lv_event_get_target(e);
+    lv_obj_t * ta = lv_event_get_user_data(e);  //文本框
+    const char * txt = lv_buttonmatrix_get_button_text(obj, lv_buttonmatrix_get_selected_button(obj));
+
+	if (lv_strcmp(txt, LV_SYMBOL_BACKSPACE) == 0)
+		lv_textarea_delete_char(ta);
+	else if (lv_strcmp(txt, LV_SYMBOL_NEW_LINE) == 0)
+		lv_obj_send_event(ta, LV_EVENT_READY, NULL);  //发送事件给文本框，根据adcode设置位置
+	else
+		lv_textarea_add_text(ta, txt);
+
+}
+
 /*******************************初始化和销毁***********************************************/
 
 
@@ -176,6 +239,122 @@ static void date_set_confirm_cb(lv_event_t *e) {
 
 
 void ui_LocationPage_Init(void) {
+	
+	lv_obj_t* ui_Location = lv_obj_create(NULL);
+	lv_obj_set_style_bg_color(ui_Location, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_remove_flag(ui_Location, LV_OBJ_FLAG_SCROLLABLE);
+	
+	//返回
+	lv_obj_t* ui_BtnBack = lv_button_create(ui_Location);
+	lv_obj_set_width(ui_BtnBack, 50);
+	lv_obj_set_height(ui_BtnBack, 50);
+	lv_obj_align(ui_BtnBack, LV_ALIGN_TOP_LEFT, 0, 0);
+	lv_obj_add_flag(ui_BtnBack, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
+	lv_obj_remove_flag(ui_BtnBack, LV_OBJ_FLAG_SCROLLABLE);
+	lv_obj_set_style_bg_color(ui_BtnBack, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_opa(ui_BtnBack, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_color(ui_BtnBack, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_opa(ui_BtnBack, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_color(ui_BtnBack, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_PRESSED);
+	lv_obj_set_style_bg_opa(ui_BtnBack, 64, LV_PART_MAIN | LV_STATE_PRESSED);
+	lv_obj_add_event_cb(ui_BtnBack, back_event_handler, LV_EVENT_CLICKED, ui_SetPage);
+	lv_obj_t* Back_icon = lv_label_create(ui_BtnBack);
+	lv_obj_set_width(Back_icon, LV_SIZE_CONTENT);
+	lv_obj_set_height(Back_icon, LV_SIZE_CONTENT);
+	lv_obj_align(Back_icon, LV_ALIGN_CENTER, 0, 0);
+	lv_label_set_text(Back_icon, LV_SYMBOL_LEFT);
+	lv_obj_set_style_text_font(Back_icon, &lv_font_montserrat_44, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+	//自动获取定位
+	lv_obj_t* ui_LocationAuto = lv_obj_create(ui_Location);
+	lv_obj_set_width(ui_LocationAuto, 750);
+	lv_obj_set_height(ui_LocationAuto, 100);
+	lv_obj_set_x(ui_LocationAuto, 0);
+	lv_obj_set_y(ui_LocationAuto, 65);
+	lv_obj_set_align(ui_LocationAuto, LV_ALIGN_TOP_MID);
+	lv_obj_remove_flag(ui_LocationAuto, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+	lv_obj_set_style_bg_color(ui_LocationAuto, lv_color_hex(0x404040), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_opa(ui_LocationAuto, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_color(ui_LocationAuto, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_opa(ui_LocationAuto, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_color(ui_LocationAuto, lv_color_hex(0x606060), LV_PART_MAIN | LV_STATE_PRESSED);
+	lv_obj_set_style_bg_opa(ui_LocationAuto, 255, LV_PART_MAIN | LV_STATE_PRESSED);
+
+	lv_obj_t* ui_IconAutoLocatin = lv_label_create(ui_LocationAuto);
+	lv_obj_set_width(ui_IconAutoLocatin, LV_SIZE_CONTENT);
+	lv_obj_set_height(ui_IconAutoLocatin, LV_SIZE_CONTENT);
+	lv_obj_set_align(ui_IconAutoLocatin, LV_ALIGN_LEFT_MID);
+	lv_label_set_text(ui_IconAutoLocatin, LV_SYMBOL_GPS);
+	lv_obj_set_style_text_font(ui_IconAutoLocatin, &lv_font_montserrat_44, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+	lv_obj_t* ui_LabelAutoLocatin = lv_label_create(ui_LocationAuto);
+	lv_obj_set_width(ui_LabelAutoLocatin, LV_SIZE_CONTENT);
+	lv_obj_set_height(ui_LabelAutoLocatin, LV_SIZE_CONTENT);
+	lv_obj_set_x(ui_LabelAutoLocatin, 100);
+	lv_obj_set_y(ui_LabelAutoLocatin, 0);
+	lv_obj_set_align(ui_LabelAutoLocatin, LV_ALIGN_LEFT_MID);
+	lv_label_set_text(ui_LabelAutoLocatin, "Auto IP Location");
+	lv_obj_set_style_text_font(ui_LabelAutoLocatin, &lv_font_montserrat_44, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+	lv_obj_t* ui_SwitchAutoLocation = lv_switch_create(ui_LocationAuto);
+	lv_obj_set_width(ui_SwitchAutoLocation, 75);
+	lv_obj_set_height(ui_SwitchAutoLocation, 50);
+	lv_obj_set_align(ui_SwitchAutoLocation, LV_ALIGN_RIGHT_MID);
+	lv_obj_add_state(ui_SwitchAutoLocation, ui_SystemArguments.auto_location ? LV_STATE_CHECKED : 0);
+
+
+	//非自动获取定位
+	lv_obj_t* ui_NoAutoLocation = lv_obj_create(ui_Location);  
+	lv_obj_set_width(ui_NoAutoLocation, 750);
+	lv_obj_set_height(ui_NoAutoLocation, 250);
+	lv_obj_set_x(ui_NoAutoLocation, 0);
+	lv_obj_set_y(ui_NoAutoLocation, -40);
+	lv_obj_set_align(ui_NoAutoLocation, LV_ALIGN_BOTTOM_MID);
+	lv_obj_remove_flag(ui_NoAutoLocation, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);
+	lv_obj_set_style_bg_color(ui_NoAutoLocation, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_opa(ui_NoAutoLocation, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_opa(ui_NoAutoLocation, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_color(ui_NoAutoLocation, lv_color_hex(0x606060), LV_PART_MAIN | LV_STATE_PRESSED);
+	lv_obj_set_style_bg_opa(ui_NoAutoLocation, 255, LV_PART_MAIN | LV_STATE_PRESSED);
+
+	ui_LabelLocationName = lv_label_create(ui_NoAutoLocation);
+    lv_obj_set_width(ui_LabelLocationName, LV_SIZE_CONTENT); 
+    lv_obj_set_height(ui_LabelLocationName, LV_SIZE_CONTENT);  
+    lv_obj_set_align(ui_LabelLocationName, LV_ALIGN_TOP_MID);
+    lv_label_set_text(ui_LabelLocationName, ui_SystemArguments.location.city);
+    lv_obj_set_style_text_font(ui_LabelLocationName, &ui_font_HeiTi72, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+	lv_obj_t* ui_LocationSet = lv_obj_create(ui_NoAutoLocation);  //设置location
+	lv_obj_set_width(ui_LocationSet, 750);
+	lv_obj_set_height(ui_LocationSet, 100);
+	lv_obj_set_align(ui_LocationSet, LV_ALIGN_BOTTOM_MID);
+	lv_obj_remove_flag(ui_LocationSet, LV_OBJ_FLAG_SCROLLABLE);
+	lv_obj_set_style_bg_color(ui_LocationSet, lv_color_hex(0x404040), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_opa(ui_LocationSet, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_opa(ui_LocationSet, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_color(ui_LocationSet, lv_color_hex(0x606060), LV_PART_MAIN | LV_STATE_PRESSED);
+	lv_obj_set_style_bg_opa(ui_LocationSet, 255,
+		LV_PART_MAIN | LV_STATE_PRESSED);
+
+	lv_obj_t* ui_LabelLocationSet = lv_label_create(ui_LocationSet);
+	lv_obj_set_width(ui_LabelLocationSet, LV_SIZE_CONTENT);
+	lv_obj_set_height(ui_LabelLocationSet, LV_SIZE_CONTENT);
+	lv_obj_set_x(ui_LabelLocationSet, 100);
+	lv_obj_set_y(ui_LabelLocationSet, 0);
+	lv_obj_set_align(ui_LabelLocationSet, LV_ALIGN_LEFT_MID);
+	lv_label_set_text(ui_LabelLocationSet, "Location Set");
+	lv_obj_set_style_text_font(ui_LabelLocationSet, &lv_font_montserrat_44, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+	if (ui_SystemArguments.auto_location == true) {
+		lv_obj_add_flag(ui_NoAutoLocation, LV_OBJ_FLAG_HIDDEN); //藏掉自主设置定位功能
+	}
+	lv_obj_add_event_cb(ui_SwitchAutoLocation, AutoLcation_event_cb, LV_EVENT_ALL, ui_NoAutoLocation);
+
+    lv_obj_add_event_cb(ui_LocationSet, Set_LoadPage_event_cb, LV_EVENT_CLICKED, "NoAutoLocation");
+
+	// load page
+	lv_scr_load_anim(ui_Location, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 100, 0, true);
+
 
 }
 void ui_LocationPage_Dinit(void) {
@@ -185,6 +364,54 @@ void ui_LocationPage_Dinit(void) {
 
 
 void ui_NoAutoLocationPage_Init(void) {
+	lv_obj_t * ui_AdcodeSetMenu = lv_obj_create(NULL);
+	lv_obj_remove_flag(ui_AdcodeSetMenu, LV_OBJ_FLAG_SCROLLABLE);
+
+	//返回
+	lv_obj_t* ui_BtnBack = lv_button_create(ui_AdcodeSetMenu);
+	lv_obj_set_width(ui_BtnBack, 50);
+	lv_obj_set_height(ui_BtnBack, 50);
+	lv_obj_align(ui_BtnBack, LV_ALIGN_TOP_LEFT, 0, 0);
+	lv_obj_add_flag(ui_BtnBack, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
+	lv_obj_remove_flag(ui_BtnBack, LV_OBJ_FLAG_SCROLLABLE);
+	lv_obj_set_style_bg_color(ui_BtnBack, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_opa(ui_BtnBack, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_color(ui_BtnBack, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_border_opa(ui_BtnBack, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+	lv_obj_set_style_bg_color(ui_BtnBack, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_PRESSED);
+	lv_obj_set_style_bg_opa(ui_BtnBack, 64, LV_PART_MAIN | LV_STATE_PRESSED);
+	lv_obj_add_event_cb(ui_BtnBack, back_event_handler, LV_EVENT_CLICKED, ui_SetPage);
+	lv_obj_t* Back_icon = lv_label_create(ui_BtnBack);
+	lv_obj_set_width(Back_icon, LV_SIZE_CONTENT);
+	lv_obj_set_height(Back_icon, LV_SIZE_CONTENT);
+	lv_obj_align(Back_icon, LV_ALIGN_CENTER, 0, 0);
+	lv_label_set_text(Back_icon, LV_SYMBOL_LEFT);
+	lv_obj_set_style_text_font(Back_icon, &lv_font_montserrat_44, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+	lv_obj_t* ta = lv_textarea_create(ui_AdcodeSetMenu);
+	lv_obj_set_size(ta, 540, 100); // 设置对象大小
+	lv_textarea_set_one_line(ta, true);
+	lv_obj_align(ta, LV_ALIGN_TOP_MID, 0, 65);
+	lv_obj_set_style_text_font(ta, &lv_font_montserrat_44, 0);
+    lv_textarea_set_align(ta, LV_TEXT_ALIGN_LEFT); //文本左对齐
+	lv_obj_add_event_cb(ta, textarea_event_handler, LV_EVENT_READY, ta);
+    lv_obj_add_state(ta, LV_STATE_FOCUSED); /*To be sure the cursor is visible*/
+
+    static const char * btnm_map[] = {"1", "2", "3", "\n",
+                                      "4", "5", "6", "\n",
+                                      "7", "8", "9", "\n",
+                                      LV_SYMBOL_BACKSPACE, "0", LV_SYMBOL_NEW_LINE, ""
+                                     };
+
+    lv_obj_t * btnm = lv_buttonmatrix_create(ui_AdcodeSetMenu);
+    lv_obj_set_size(btnm, 540, 270);
+    lv_obj_align(btnm, LV_ALIGN_BOTTOM_MID, 0, -20);
+    lv_obj_add_event_cb(btnm, btnm_event_handler, LV_EVENT_VALUE_CHANGED, ta);
+    lv_obj_remove_flag(btnm, LV_OBJ_FLAG_CLICK_FOCUSABLE); /*To keep the text area focused on button clicks*/
+	lv_buttonmatrix_set_map(btnm, btnm_map);
+    lv_obj_set_style_text_font(btnm, &lv_font_montserrat_44, 0);
+
+	lv_scr_load_anim(ui_AdcodeSetMenu, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 100, 0, true);
 
 }
 void ui_NoAutoLocationPage_Dinit(void) {
@@ -333,7 +560,7 @@ void ui_SetTimePage_Init(void)
 
 
 	if (ui_SystemArguments.auto_time == true) {
-		lv_obj_add_flag(ui_NoTimeAuto, LV_OBJ_FLAG_HIDDEN); //自动获取定位的话隐藏掉自主设置定位功能
+		lv_obj_add_flag(ui_NoTimeAuto, LV_OBJ_FLAG_HIDDEN); //自动获取时间的话隐藏掉自主设置时间功能
 	}
 	lv_obj_add_event_cb(ui_SwitchAutoTime, AutoTime_event_cb, LV_EVENT_ALL, ui_NoTimeAuto);
 
@@ -659,7 +886,8 @@ void ui_SetPage_Init(void)
 	lv_label_set_text(ui_LabelLocation, "Location");
 	lv_obj_set_style_text_font(ui_LabelLocation, &lv_font_montserrat_44, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-	lv_obj_add_event_cb(ui_PanelLocation, light_slider_event_cb, LV_EVENT_CLICKED, "LocationMenu");
+	lv_obj_add_event_cb(ui_PanelLocation, Set_LoadPage_event_cb, LV_EVENT_CLICKED, "LocationPage");
+
 
 
 
@@ -691,7 +919,7 @@ void ui_SetPage_Init(void)
 	lv_obj_set_height(ui_BrightSlider, 40);
 	lv_obj_align(ui_BrightSlider, LV_ALIGN_LEFT_MID, 100, 0);
 
-	lv_obj_add_event_cb(ui_BrightSlider, sound_slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
+	lv_obj_add_event_cb(ui_BrightSlider, light_slider_event_cb, LV_EVENT_CLICKED, "LocationMenu");
 
 
 	//声音
@@ -723,7 +951,7 @@ void ui_SetPage_Init(void)
 	lv_obj_set_height(ui_SoudSlider, 40);
 	lv_obj_align(ui_SoudSlider, LV_ALIGN_LEFT_MID, 100, 0);
 
-	// lv_obj_add_event_cb(ui_BrightSlider, light_slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
+	lv_obj_add_event_cb(ui_SoudSlider, sound_slider_event_cb, LV_EVENT_VALUE_CHANGED, NULL);
 
 
 	lv_scr_load_anim(ui_SetPage, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 100, 0, true);
