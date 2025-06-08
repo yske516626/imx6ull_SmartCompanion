@@ -1,0 +1,1800 @@
+前方 直行 __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+往 前进 一点 __label____label__MoveForward
+请 向 右 移动 __label____label__MoveTurnright
+请 左转 __label____label__MoveTurnLeft
+再见 啦 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+左转 __label____label__MoveTurnLeft
+向前 移动 一点 __label____label__MoveForward
+你 叫 什么 名字 ？ __label____label__unknown
+左侧 调整 __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+继续 前进 继续前进 __label____label__MoveForward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+向 左边 走 __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+向 后退 一点 __label____label__MoveBackward
+请 左转 __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+左转 __label____label__MoveTurnLeft
+右转 __label____label__MoveTurnright
+再会 ！ __label____label__TalkEnd
+请 朝右 走 __label____label__MoveTurnright
+最近 有 什么 新闻 ？ __label____label__unknown
+左拐 __label____label__MoveTurnLeft
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+请 再 往后 往后走 一点 __label____label__MoveBackward
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+前行 ！ __label____label__MoveForward
+向 右方 转动 __label____label__MoveTurnright
+左转 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+前方 直行 __label____label__MoveForward
+向 左方 移动 一点 __label____label__MoveTurnLeft
+再见 啦 ！ __label____label__TalkEnd
+请 再 往后 往后走 一点 __label____label__MoveBackward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+右转 __label____label__MoveTurnright
+请 往后 移动 __label____label__MoveBackward
+向前 踏步 __label____label__MoveForward
+再见 啦 ！ __label____label__TalkEnd
+前行 ！ __label____label__MoveForward
+前方 直行 __label____label__MoveForward
+直走 __label____label__MoveForward
+后退 一步 __label____label__MoveBackward
+向 右侧 移动 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+请 向前 向前走 三步 __label____label__MoveForward
+往后 往后走 __label____label__MoveBackward
+向 右方 转动 __label____label__MoveTurnright
+向 右 拐 __label____label__MoveTurnright
+前方 直行 __label____label__MoveForward
+现在 几点 了 __label____label__unknown
+现在 几点 了 __label____label__unknown
+左转 五度 __label____label__MoveTurnLeft
+向 左边 走 __label____label__MoveTurnLeft
+倒退 一点 __label____label__MoveBackward
+你 叫 什么 名字 ？ __label____label__unknown
+左拐 __label____label__MoveTurnLeft
+我要 机票 订机票 __label____label__unknown
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+你 会 讲 笑话 吗 ？ __label____label__unknown
+往右 右边 往右边 拐 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+请 倒退 一步 __label____label__MoveBackward
+向前 向前走 两步 __label____label__MoveForward
+你 会 讲 笑话 吗 ？ __label____label__unknown
+请 右转 __label____label__MoveTurnright
+向前 踏步 __label____label__MoveForward
+请 向前 向前走 三步 __label____label__MoveForward
+请 向 右 移动 __label____label__MoveTurnright
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+走向 前方 __label____label__MoveForward
+往右 右边 往右边 拐 __label____label__MoveTurnright
+退后 __label____label__MoveBackward
+继续 前进 继续前进 __label____label__MoveForward
+向 后 倒 一点 __label____label__MoveBackward
+请 再 往后 往后走 一点 __label____label__MoveBackward
+请 前进 一点 __label____label__MoveForward
+直走 __label____label__MoveForward
+左转 五度 __label____label__MoveTurnLeft
+请 向前 向前走 三步 __label____label__MoveForward
+后退 一步 __label____label__MoveBackward
+请 退 两步 __label____label__MoveBackward
+左侧 调整 __label____label__MoveTurnLeft
+请 向 右 移动 __label____label__MoveTurnright
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+现在 几点 了 __label____label__unknown
+请 朝右 走 __label____label__MoveTurnright
+向 右 拐 __label____label__MoveTurnright
+左边 往左边 移动 __label____label__MoveTurnLeft
+向 右侧 移动 __label____label__MoveTurnright
+今天 星期 几 ？ __label____label__unknown
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+后退 一步 __label____label__MoveBackward
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+再见 啦 ！ __label____label__TalkEnd
+往后 往后走 __label____label__MoveBackward
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+走向 前方 __label____label__MoveForward
+今天 星期 几 ？ __label____label__unknown
+左边 往左边 移动 __label____label__MoveTurnLeft
+请 朝右 走 __label____label__MoveTurnright
+请 后退 __label____label__MoveBackward
+再 后退 一点 __label____label__MoveBackward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+拜拜 ！ __label____label__TalkEnd
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+请 后退 __label____label__MoveBackward
+右方 调整 __label____label__MoveTurnright
+向前 向前走 两步 __label____label__MoveForward
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+现在 几点 了 __label____label__unknown
+走向 前方 __label____label__MoveForward
+向前 踏步 __label____label__MoveForward
+请 向前 向前走 三步 __label____label__MoveForward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+往 前进 一点 __label____label__MoveForward
+前行 ！ __label____label__MoveForward
+请 倒退 一步 __label____label__MoveBackward
+往右 右边 往右边 拐 __label____label__MoveTurnright
+你 会 唱歌 吗 __label____label__unknown
+走向 前方 __label____label__MoveForward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+向 左 移动 __label____label__MoveTurnLeft
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+向 右边 挪 一点 __label____label__MoveTurnright
+现在 几点 了 __label____label__unknown
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+最近 有 什么 新闻 ？ __label____label__unknown
+右方 调整 __label____label__MoveTurnright
+向 后 挪 一点 __label____label__MoveBackward
+这个 世界 有 多 大 ？ __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+向 右方 转动 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+往右 走 三步 __label____label__MoveTurnright
+后退 一步 __label____label__MoveBackward
+后退 一步 __label____label__MoveBackward
+请 右转 __label____label__MoveTurnright
+向 右 拐 __label____label__MoveTurnright
+向 后退 一点 __label____label__MoveBackward
+请 朝右 走 __label____label__MoveTurnright
+请 右转 __label____label__MoveTurnright
+向 左 移动 __label____label__MoveTurnLeft
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+请 向 右 移动 __label____label__MoveTurnright
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+这个 世界 有 多 大 ？ __label____label__unknown
+向 右侧 移动 __label____label__MoveTurnright
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+你 会 讲 笑话 吗 ？ __label____label__unknown
+请往 左 拐 __label____label__MoveTurnLeft
+再 后退 一点 __label____label__MoveBackward
+往前 移动 __label____label__MoveForward
+你 叫 什么 名字 ？ __label____label__unknown
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+这个 世界 有 多 大 ？ __label____label__unknown
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+我要 机票 订机票 __label____label__unknown
+退后 __label____label__MoveBackward
+向 后退 一点 __label____label__MoveBackward
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+请 再 往后 往后走 一点 __label____label__MoveBackward
+后退 三步 __label____label__MoveBackward
+左转 __label____label__MoveTurnLeft
+往前 移动 __label____label__MoveForward
+这个 世界 有 多 大 ？ __label____label__unknown
+请 前进 一点 __label____label__MoveForward
+直走 __label____label__MoveForward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+左转 __label____label__MoveTurnLeft
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+你 叫 什么 名字 ？ __label____label__unknown
+后退 三步 __label____label__MoveBackward
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+左转 __label____label__MoveTurnLeft
+向 右边 挪 一点 __label____label__MoveTurnright
+请 前进 一点 __label____label__MoveForward
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+往右 右边 往右边 拐 __label____label__MoveTurnright
+往 前进 一点 __label____label__MoveForward
+向 左方 移动 一点 __label____label__MoveTurnLeft
+请 向左走 __label____label__MoveTurnLeft
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+向 后 挪 一点 __label____label__MoveBackward
+右转 __label____label__MoveTurnright
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+左边 往左边 移动 __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+往 前进 一点 __label____label__MoveForward
+请 向左走 __label____label__MoveTurnLeft
+向 右方 转动 __label____label__MoveTurnright
+走向 前方 __label____label__MoveForward
+你 会 讲 笑话 吗 ？ __label____label__unknown
+再见 啦 ！ __label____label__TalkEnd
+我要 机票 订机票 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 朝右 走 __label____label__MoveTurnright
+这个 世界 有 多 大 ？ __label____label__unknown
+最近 有 什么 新闻 ？ __label____label__unknown
+向 后 挪 一点 __label____label__MoveBackward
+往前 移动 __label____label__MoveForward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 往前 往前走 __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+向 右 拐 __label____label__MoveTurnright
+向 后 倒 一点 __label____label__MoveBackward
+向 右方 转动 __label____label__MoveTurnright
+现在 几点 了 __label____label__unknown
+请 向 右 移动 __label____label__MoveTurnright
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+你 会 唱歌 吗 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+再见 啦 ！ __label____label__TalkEnd
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+再见 啦 ！ __label____label__TalkEnd
+直走 __label____label__MoveForward
+前行 ！ __label____label__MoveForward
+前方 直行 __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+请 向前 向前走 五步 __label____label__MoveForward
+前方 直行 __label____label__MoveForward
+请 向左走 __label____label__MoveTurnLeft
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+向 后 挪 一点 __label____label__MoveBackward
+左转 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+后退 三步 __label____label__MoveBackward
+你 叫 什么 名字 ？ __label____label__unknown
+往前 移动 __label____label__MoveForward
+左拐 __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+继续 前进 继续前进 __label____label__MoveForward
+退后 __label____label__MoveBackward
+后退 三步 __label____label__MoveBackward
+左拐 __label____label__MoveTurnLeft
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+向 后 倒 一点 __label____label__MoveBackward
+直走 __label____label__MoveForward
+你 会 讲 笑话 吗 ？ __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+请 向左走 __label____label__MoveTurnLeft
+请 前进 一点 __label____label__MoveForward
+请 前进 一点 __label____label__MoveForward
+请往 左 拐 __label____label__MoveTurnLeft
+往前 移动 __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+前行 ！ __label____label__MoveForward
+后退 一步 __label____label__MoveBackward
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+后退 一步 __label____label__MoveBackward
+向 右 拐 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+左转 __label____label__MoveTurnLeft
+往 前进 一点 __label____label__MoveForward
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+请 向左走 __label____label__MoveTurnLeft
+向 右边 挪 一点 __label____label__MoveTurnright
+走向 前方 __label____label__MoveForward
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+往 前进 一点 __label____label__MoveForward
+向前 踏步 __label____label__MoveForward
+向 右 拐 __label____label__MoveTurnright
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+向 后 倒 一点 __label____label__MoveBackward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+我要 机票 订机票 __label____label__unknown
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+请 往后 移动 __label____label__MoveBackward
+请 往前 往前走 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+后退 一步 __label____label__MoveBackward
+左边 往左边 移动 __label____label__MoveTurnLeft
+右转 __label____label__MoveTurnright
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+向 左方 移动 一点 __label____label__MoveTurnLeft
+请 往后 移动 __label____label__MoveBackward
+往后 往后走 __label____label__MoveBackward
+右方 调整 __label____label__MoveTurnright
+再会 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+向 右边 挪 一点 __label____label__MoveTurnright
+请 向前 向前走 五步 __label____label__MoveForward
+现在 几点 了 __label____label__unknown
+再 后退 一点 __label____label__MoveBackward
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+直走 __label____label__MoveForward
+左拐 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+后退 一步 __label____label__MoveBackward
+最近 有 什么 新闻 ？ __label____label__unknown
+往右 走 三步 __label____label__MoveTurnright
+右转 __label____label__MoveTurnright
+向前 向前走 两步 __label____label__MoveForward
+左转 __label____label__MoveTurnLeft
+拜拜 ！ __label____label__TalkEnd
+请 向前 向前走 三步 __label____label__MoveForward
+往前 移动 __label____label__MoveForward
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+你 会 讲 笑话 吗 ？ __label____label__unknown
+请 向左走 __label____label__MoveTurnLeft
+拜拜 ！ __label____label__TalkEnd
+请 往后 移动 __label____label__MoveBackward
+我要 机票 订机票 __label____label__unknown
+请往 左 拐 __label____label__MoveTurnLeft
+再见 啦 ！ __label____label__TalkEnd
+请往 左 拐 __label____label__MoveTurnLeft
+向 后 挪 一点 __label____label__MoveBackward
+你 会 唱歌 吗 __label____label__unknown
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+请 向前 向前走 五步 __label____label__MoveForward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+向 左 移动 __label____label__MoveTurnLeft
+请 向前 向前走 三步 __label____label__MoveForward
+你 会 讲 笑话 吗 ？ __label____label__unknown
+左侧 调整 __label____label__MoveTurnLeft
+向 后 倒 一点 __label____label__MoveBackward
+我要 机票 订机票 __label____label__unknown
+请 退 两步 __label____label__MoveBackward
+再见 啦 ！ __label____label__TalkEnd
+往后 往后走 __label____label__MoveBackward
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+后退 一步 __label____label__MoveBackward
+请 往前 往前走 __label____label__MoveForward
+请 向 右 移动 __label____label__MoveTurnright
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+往右 走 三步 __label____label__MoveTurnright
+向 右 拐 __label____label__MoveTurnright
+请 倒退 一步 __label____label__MoveBackward
+左侧 调整 __label____label__MoveTurnLeft
+请 右转 __label____label__MoveTurnright
+右方 调整 __label____label__MoveTurnright
+后退 三步 __label____label__MoveBackward
+向 右 拐 __label____label__MoveTurnright
+向 左 移动 __label____label__MoveTurnLeft
+向 右方 转动 __label____label__MoveTurnright
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+向 右方 转动 __label____label__MoveTurnright
+向前 踏步 __label____label__MoveForward
+请 向前 向前走 五步 __label____label__MoveForward
+请 往前 往前走 __label____label__MoveForward
+往右 右边 往右边 拐 __label____label__MoveTurnright
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+前行 ！ __label____label__MoveForward
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+右方 调整 __label____label__MoveTurnright
+向 左方 移动 一点 __label____label__MoveTurnLeft
+再见 啦 ！ __label____label__TalkEnd
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+往右 走 三步 __label____label__MoveTurnright
+向前 移动 一点 __label____label__MoveForward
+左侧 调整 __label____label__MoveTurnLeft
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 向前 向前走 五步 __label____label__MoveForward
+向前 移动 一点 __label____label__MoveForward
+向前 移动 一点 __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+倒退 一点 __label____label__MoveBackward
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+今天 星期 几 ？ __label____label__unknown
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+请往 左 拐 __label____label__MoveTurnLeft
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+走向 前方 __label____label__MoveForward
+请 朝右 走 __label____label__MoveTurnright
+请 倒退 一步 __label____label__MoveBackward
+走向 前方 __label____label__MoveForward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+往右 走 三步 __label____label__MoveTurnright
+向 后 倒 一点 __label____label__MoveBackward
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+左转 五度 __label____label__MoveTurnLeft
+最近 有 什么 新闻 ？ __label____label__unknown
+这个 世界 有 多 大 ？ __label____label__unknown
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+向 后 挪 一点 __label____label__MoveBackward
+向 左 移动 __label____label__MoveTurnLeft
+向 右边 挪 一点 __label____label__MoveTurnright
+向前 移动 一点 __label____label__MoveForward
+请 右转 __label____label__MoveTurnright
+你 叫 什么 名字 ？ __label____label__unknown
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+向前 移动 一点 __label____label__MoveForward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+左侧 走 一点 __label____label__MoveTurnLeft
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+右方 调整 __label____label__MoveTurnright
+请 再 往后 往后走 一点 __label____label__MoveBackward
+请 向前 向前走 三步 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+向前 移动 一点 __label____label__MoveForward
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+继续 前进 继续前进 __label____label__MoveForward
+向前 踏步 __label____label__MoveForward
+向 右方 转动 __label____label__MoveTurnright
+请 朝右 走 __label____label__MoveTurnright
+左侧 调整 __label____label__MoveTurnLeft
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+现在 几点 了 __label____label__unknown
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+向 后 挪 一点 __label____label__MoveBackward
+直走 __label____label__MoveForward
+向 后 倒 一点 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+拜拜 ！ __label____label__TalkEnd
+再 后退 一点 __label____label__MoveBackward
+后退 一步 __label____label__MoveBackward
+前行 ！ __label____label__MoveForward
+你 会 唱歌 吗 __label____label__unknown
+向 左方 移动 一点 __label____label__MoveTurnLeft
+向 后 挪 一点 __label____label__MoveBackward
+再会 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+向 右边 挪 一点 __label____label__MoveTurnright
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+这个 世界 有 多 大 ？ __label____label__unknown
+向 右边 挪 一点 __label____label__MoveTurnright
+我要 机票 订机票 __label____label__unknown
+左拐 __label____label__MoveTurnLeft
+左拐 __label____label__MoveTurnLeft
+你 叫 什么 名字 ？ __label____label__unknown
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+你 会 唱歌 吗 __label____label__unknown
+往右 右边 往右边 拐 __label____label__MoveTurnright
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+我要 机票 订机票 __label____label__unknown
+后退 一步 __label____label__MoveBackward
+这个 世界 有 多 大 ？ __label____label__unknown
+向 左边 走 __label____label__MoveTurnLeft
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+向 后 倒 一点 __label____label__MoveBackward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+现在 几点 了 __label____label__unknown
+再见 啦 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+往后 往后走 __label____label__MoveBackward
+左边 往左边 移动 __label____label__MoveTurnLeft
+直走 __label____label__MoveForward
+请 再 往后 往后走 一点 __label____label__MoveBackward
+向 左 移动 __label____label__MoveTurnLeft
+左转 __label____label__MoveTurnLeft
+左转 五度 __label____label__MoveTurnLeft
+再会 ！ __label____label__TalkEnd
+走向 前方 __label____label__MoveForward
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+再见 啦 ！ __label____label__TalkEnd
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+向 左方 移动 一点 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+向 左方 移动 一点 __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+请 右转 __label____label__MoveTurnright
+继续 前进 继续前进 __label____label__MoveForward
+向 左 移动 __label____label__MoveTurnLeft
+向 右 拐 __label____label__MoveTurnright
+你 会 讲 笑话 吗 ？ __label____label__unknown
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+往右 右边 往右边 拐 __label____label__MoveTurnright
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+拜拜 ！ __label____label__TalkEnd
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+右转 __label____label__MoveTurnright
+向 左边 走 __label____label__MoveTurnLeft
+再会 ！ __label____label__TalkEnd
+左边 往左边 移动 __label____label__MoveTurnLeft
+向 左 移动 __label____label__MoveTurnLeft
+向 右侧 移动 __label____label__MoveTurnright
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+请 右转 __label____label__MoveTurnright
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+后退 三步 __label____label__MoveBackward
+请 往前 往前走 __label____label__MoveForward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+向 后退 一点 __label____label__MoveBackward
+向 后 倒 一点 __label____label__MoveBackward
+向 左 移动 __label____label__MoveTurnLeft
+向前 移动 一点 __label____label__MoveForward
+请 再 往后 往后走 一点 __label____label__MoveBackward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+向 左方 移动 一点 __label____label__MoveTurnLeft
+你 叫 什么 名字 ？ __label____label__unknown
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+请 左转 __label____label__MoveTurnLeft
+这个 世界 有 多 大 ？ __label____label__unknown
+左侧 走 一点 __label____label__MoveTurnLeft
+请 往前 往前走 __label____label__MoveForward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+左转 五度 __label____label__MoveTurnLeft
+请 再 往后 往后走 一点 __label____label__MoveBackward
+请 退 两步 __label____label__MoveBackward
+请 向前 向前走 三步 __label____label__MoveForward
+这个 世界 有 多 大 ？ __label____label__unknown
+请 向左走 __label____label__MoveTurnLeft
+向 右方 转动 __label____label__MoveTurnright
+向 后 倒 一点 __label____label__MoveBackward
+左转 __label____label__MoveTurnLeft
+向 左 移动 __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+再 后退 一点 __label____label__MoveBackward
+往右 走 三步 __label____label__MoveTurnright
+向前 向前走 两步 __label____label__MoveForward
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+再 后退 一点 __label____label__MoveBackward
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+请 往后 移动 __label____label__MoveBackward
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+后退 三步 __label____label__MoveBackward
+今天 星期 几 ？ __label____label__unknown
+再会 ！ __label____label__TalkEnd
+向前 移动 一点 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+往前 移动 __label____label__MoveForward
+向 左 移动 __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+退后 __label____label__MoveBackward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+向 后退 一点 __label____label__MoveBackward
+这个 世界 有 多 大 ？ __label____label__unknown
+你 会 讲 笑话 吗 ？ __label____label__unknown
+右转 __label____label__MoveTurnright
+现在 几点 了 __label____label__unknown
+后退 三步 __label____label__MoveBackward
+左转 __label____label__MoveTurnLeft
+倒退 一点 __label____label__MoveBackward
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+往前 移动 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+走向 前方 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+最近 有 什么 新闻 ？ __label____label__unknown
+再会 ！ __label____label__TalkEnd
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+后退 一步 __label____label__MoveBackward
+再 后退 一点 __label____label__MoveBackward
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+拜拜 ！ __label____label__TalkEnd
+后退 一步 __label____label__MoveBackward
+最近 有 什么 新闻 ？ __label____label__unknown
+向前 踏步 __label____label__MoveForward
+退后 __label____label__MoveBackward
+向 后 倒 一点 __label____label__MoveBackward
+我要 机票 订机票 __label____label__unknown
+请 往后 移动 __label____label__MoveBackward
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+再见 啦 ！ __label____label__TalkEnd
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+你 会 唱歌 吗 __label____label__unknown
+向前 向前走 两步 __label____label__MoveForward
+向 左边 走 __label____label__MoveTurnLeft
+往前 移动 __label____label__MoveForward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请 左转 __label____label__MoveTurnLeft
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+右转 __label____label__MoveTurnright
+请 倒退 一步 __label____label__MoveBackward
+向前 踏步 __label____label__MoveForward
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+左转 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+你 会 唱歌 吗 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+向 后 挪 一点 __label____label__MoveBackward
+最近 有 什么 新闻 ？ __label____label__unknown
+再见 啦 ！ __label____label__TalkEnd
+前行 ！ __label____label__MoveForward
+今天 星期 几 ？ __label____label__unknown
+向 右侧 移动 __label____label__MoveTurnright
+前行 ！ __label____label__MoveForward
+继续 前进 继续前进 __label____label__MoveForward
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+向 右边 挪 一点 __label____label__MoveTurnright
+请 前进 一点 __label____label__MoveForward
+请 再 往后 往后走 一点 __label____label__MoveBackward
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+左侧 走 一点 __label____label__MoveTurnLeft
+你 叫 什么 名字 ？ __label____label__unknown
+请往 左 拐 __label____label__MoveTurnLeft
+请 向 右 移动 __label____label__MoveTurnright
+请 向前 向前走 五步 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+现在 几点 了 __label____label__unknown
+请 前进 一点 __label____label__MoveForward
+右方 调整 __label____label__MoveTurnright
+向 右边 挪 一点 __label____label__MoveTurnright
+前方 直行 __label____label__MoveForward
+左转 __label____label__MoveTurnLeft
+左拐 __label____label__MoveTurnLeft
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+向 右 拐 __label____label__MoveTurnright
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+右转 __label____label__MoveTurnright
+你 会 讲 笑话 吗 ？ __label____label__unknown
+倒退 一点 __label____label__MoveBackward
+向 右 拐 __label____label__MoveTurnright
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+向 左 移动 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+请 向前 向前走 三步 __label____label__MoveForward
+直走 __label____label__MoveForward
+请 向左走 __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+请 往后 移动 __label____label__MoveBackward
+向前 踏步 __label____label__MoveForward
+这个 世界 有 多 大 ？ __label____label__unknown
+右方 调整 __label____label__MoveTurnright
+左拐 __label____label__MoveTurnLeft
+请 朝右 走 __label____label__MoveTurnright
+往 前进 一点 __label____label__MoveForward
+往 前进 一点 __label____label__MoveForward
+向 左方 移动 一点 __label____label__MoveTurnLeft
+现在 几点 了 __label____label__unknown
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+请 退 两步 __label____label__MoveBackward
+向前 向前走 两步 __label____label__MoveForward
+直走 __label____label__MoveForward
+请 退 两步 __label____label__MoveBackward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+继续 前进 继续前进 __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+请往 左 拐 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+请 往后 移动 __label____label__MoveBackward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+请 倒退 一步 __label____label__MoveBackward
+向 右方 转动 __label____label__MoveTurnright
+再会 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+左拐 __label____label__MoveTurnLeft
+向 后 倒 一点 __label____label__MoveBackward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+请 向左走 __label____label__MoveTurnLeft
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+左转 五度 __label____label__MoveTurnLeft
+左侧 走 一点 __label____label__MoveTurnLeft
+请 向左走 __label____label__MoveTurnLeft
+向 右侧 移动 __label____label__MoveTurnright
+左侧 调整 __label____label__MoveTurnLeft
+向 后 挪 一点 __label____label__MoveBackward
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+右转 __label____label__MoveTurnright
+再 后退 一点 __label____label__MoveBackward
+请 倒退 一步 __label____label__MoveBackward
+拜拜 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+左侧 走 一点 __label____label__MoveTurnLeft
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 向 右 移动 __label____label__MoveTurnright
+今天 星期 几 ？ __label____label__unknown
+请 往后 移动 __label____label__MoveBackward
+请 左转 __label____label__MoveTurnLeft
+退后 __label____label__MoveBackward
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+前方 直行 __label____label__MoveForward
+向 左边 走 __label____label__MoveTurnLeft
+请 向前 向前走 三步 __label____label__MoveForward
+向 后 倒 一点 __label____label__MoveBackward
+往 前进 一点 __label____label__MoveForward
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+现在 几点 了 __label____label__unknown
+向 右侧 移动 __label____label__MoveTurnright
+再见 啦 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+退后 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+往前 移动 __label____label__MoveForward
+左转 __label____label__MoveTurnLeft
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+往右 走 三步 __label____label__MoveTurnright
+往右 走 三步 __label____label__MoveTurnright
+最近 有 什么 新闻 ？ __label____label__unknown
+请 再 往后 往后走 一点 __label____label__MoveBackward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+你 会 讲 笑话 吗 ？ __label____label__unknown
+后退 三步 __label____label__MoveBackward
+向 左 移动 __label____label__MoveTurnLeft
+向 右 拐 __label____label__MoveTurnright
+请 向 右 移动 __label____label__MoveTurnright
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+再见 啦 ！ __label____label__TalkEnd
+向 左 移动 __label____label__MoveTurnLeft
+再会 ！ __label____label__TalkEnd
+请 向前 向前走 三步 __label____label__MoveForward
+右方 调整 __label____label__MoveTurnright
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 左转 __label____label__MoveTurnLeft
+请 再 往后 往后走 一点 __label____label__MoveBackward
+往前 移动 __label____label__MoveForward
+这个 世界 有 多 大 ？ __label____label__unknown
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+向 右 拐 __label____label__MoveTurnright
+左侧 调整 __label____label__MoveTurnLeft
+请 朝右 走 __label____label__MoveTurnright
+请往 左 拐 __label____label__MoveTurnLeft
+你 叫 什么 名字 ？ __label____label__unknown
+退后 __label____label__MoveBackward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请 倒退 一步 __label____label__MoveBackward
+向 后 倒 一点 __label____label__MoveBackward
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+后退 三步 __label____label__MoveBackward
+直走 __label____label__MoveForward
+再见 啦 ！ __label____label__TalkEnd
+后退 三步 __label____label__MoveBackward
+向前 移动 一点 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 向左走 __label____label__MoveTurnLeft
+前方 直行 __label____label__MoveForward
+往后 往后走 __label____label__MoveBackward
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+向 右 拐 __label____label__MoveTurnright
+直走 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+右方 调整 __label____label__MoveTurnright
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+左转 __label____label__MoveTurnLeft
+今天 星期 几 ？ __label____label__unknown
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+我要 机票 订机票 __label____label__unknown
+直走 __label____label__MoveForward
+请 向 右 移动 __label____label__MoveTurnright
+请 前进 一点 __label____label__MoveForward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+请 右转 __label____label__MoveTurnright
+向 后 挪 一点 __label____label__MoveBackward
+向 右 拐 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 朝右 走 __label____label__MoveTurnright
+拜拜 ！ __label____label__TalkEnd
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+右转 __label____label__MoveTurnright
+最近 有 什么 新闻 ？ __label____label__unknown
+再会 ！ __label____label__TalkEnd
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+右方 调整 __label____label__MoveTurnright
+这个 世界 有 多 大 ？ __label____label__unknown
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+再会 ！ __label____label__TalkEnd
+拜拜 ！ __label____label__TalkEnd
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+再 后退 一点 __label____label__MoveBackward
+左侧 走 一点 __label____label__MoveTurnLeft
+左侧 调整 __label____label__MoveTurnLeft
+走向 前方 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+向 左 移动 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+左转 __label____label__MoveTurnLeft
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+向 左 移动 __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+你 会 唱歌 吗 __label____label__unknown
+向前 踏步 __label____label__MoveForward
+左转 五度 __label____label__MoveTurnLeft
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+左边 往左边 移动 __label____label__MoveTurnLeft
+现在 几点 了 __label____label__unknown
+向 后退 一点 __label____label__MoveBackward
+你 叫 什么 名字 ？ __label____label__unknown
+右转 __label____label__MoveTurnright
+向 后 挪 一点 __label____label__MoveBackward
+再 后退 一点 __label____label__MoveBackward
+继续 前进 继续前进 __label____label__MoveForward
+请 右转 __label____label__MoveTurnright
+后退 三步 __label____label__MoveBackward
+这个 世界 有 多 大 ？ __label____label__unknown
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+向 后 倒 一点 __label____label__MoveBackward
+向 后 挪 一点 __label____label__MoveBackward
+左转 __label____label__MoveTurnLeft
+请 往前 往前走 __label____label__MoveForward
+左转 五度 __label____label__MoveTurnLeft
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+请 退 两步 __label____label__MoveBackward
+请 向 右 移动 __label____label__MoveTurnright
+向 右侧 移动 __label____label__MoveTurnright
+这个 世界 有 多 大 ？ __label____label__unknown
+向 左 移动 __label____label__MoveTurnLeft
+请 往前 往前走 __label____label__MoveForward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+请 右转 __label____label__MoveTurnright
+前方 直行 __label____label__MoveForward
+后退 一步 __label____label__MoveBackward
+往右 右边 往右边 拐 __label____label__MoveTurnright
+拜拜 ！ __label____label__TalkEnd
+我要 机票 订机票 __label____label__unknown
+前行 ！ __label____label__MoveForward
+向 右方 转动 __label____label__MoveTurnright
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+直走 __label____label__MoveForward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+往 前进 一点 __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+后退 三步 __label____label__MoveBackward
+请 往后 移动 __label____label__MoveBackward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+直走 __label____label__MoveForward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 向前 向前走 三步 __label____label__MoveForward
+右转 __label____label__MoveTurnright
+后退 一步 __label____label__MoveBackward
+向 后 挪 一点 __label____label__MoveBackward
+左侧 调整 __label____label__MoveTurnLeft
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+往右 走 三步 __label____label__MoveTurnright
+请 往后 移动 __label____label__MoveBackward
+请 后退 __label____label__MoveBackward
+向 后 挪 一点 __label____label__MoveBackward
+你 叫 什么 名字 ？ __label____label__unknown
+继续 前进 继续前进 __label____label__MoveForward
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+向 左边 走 __label____label__MoveTurnLeft
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+左转 __label____label__MoveTurnLeft
+现在 几点 了 __label____label__unknown
+这个 世界 有 多 大 ？ __label____label__unknown
+你 会 唱歌 吗 __label____label__unknown
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+往前 移动 __label____label__MoveForward
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+你 会 唱歌 吗 __label____label__unknown
+请往 左 拐 __label____label__MoveTurnLeft
+往右 右边 往右边 拐 __label____label__MoveTurnright
+再见 啦 ！ __label____label__TalkEnd
+前方 直行 __label____label__MoveForward
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+倒退 一点 __label____label__MoveBackward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+左转 __label____label__MoveTurnLeft
+走向 前方 __label____label__MoveForward
+前方 直行 __label____label__MoveForward
+这个 世界 有 多 大 ？ __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+向 左 移动 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+左拐 __label____label__MoveTurnLeft
+你 叫 什么 名字 ？ __label____label__unknown
+再会 ！ __label____label__TalkEnd
+往后 往后走 __label____label__MoveBackward
+往 前进 一点 __label____label__MoveForward
+右方 调整 __label____label__MoveTurnright
+向 左边 走 __label____label__MoveTurnLeft
+请 前进 一点 __label____label__MoveForward
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+请 往后 移动 __label____label__MoveBackward
+往右 走 三步 __label____label__MoveTurnright
+直走 __label____label__MoveForward
+往 前进 一点 __label____label__MoveForward
+退后 __label____label__MoveBackward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+你 叫 什么 名字 ？ __label____label__unknown
+左侧 走 一点 __label____label__MoveTurnLeft
+你 会 唱歌 吗 __label____label__unknown
+向前 踏步 __label____label__MoveForward
+右转 __label____label__MoveTurnright
+向 右边 挪 一点 __label____label__MoveTurnright
+左侧 走 一点 __label____label__MoveTurnLeft
+我要 机票 订机票 __label____label__unknown
+向 左边 走 __label____label__MoveTurnLeft
+最近 有 什么 新闻 ？ __label____label__unknown
+向 右 拐 __label____label__MoveTurnright
+向 左 移动 __label____label__MoveTurnLeft
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+向 右 拐 __label____label__MoveTurnright
+请 朝右 走 __label____label__MoveTurnright
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+左转 __label____label__MoveTurnLeft
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+向 左方 移动 一点 __label____label__MoveTurnLeft
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+左边 往左边 移动 __label____label__MoveTurnLeft
+退后 __label____label__MoveBackward
+往右 走 三步 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+向前 移动 一点 __label____label__MoveForward
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+往后 往后走 __label____label__MoveBackward
+继续 前进 继续前进 __label____label__MoveForward
+你 会 唱歌 吗 __label____label__unknown
+请 后退 __label____label__MoveBackward
+向 后 倒 一点 __label____label__MoveBackward
+前方 直行 __label____label__MoveForward
+请 前进 一点 __label____label__MoveForward
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+左边 往左边 移动 __label____label__MoveTurnLeft
+左拐 __label____label__MoveTurnLeft
+请 向左走 __label____label__MoveTurnLeft
+右方 调整 __label____label__MoveTurnright
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 向左走 __label____label__MoveTurnLeft
+请 右转 __label____label__MoveTurnright
+向 右侧 移动 __label____label__MoveTurnright
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+请 再 往后 往后走 一点 __label____label__MoveBackward
+请 退 两步 __label____label__MoveBackward
+向 后 倒 一点 __label____label__MoveBackward
+请 倒退 一步 __label____label__MoveBackward
+请 再 往后 往后走 一点 __label____label__MoveBackward
+直走 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+左拐 __label____label__MoveTurnLeft
+最近 有 什么 新闻 ？ __label____label__unknown
+请 向 右 移动 __label____label__MoveTurnright
+现在 几点 了 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 向前 向前走 五步 __label____label__MoveForward
+向 左边 走 __label____label__MoveTurnLeft
+最近 有 什么 新闻 ？ __label____label__unknown
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+向 右方 转动 __label____label__MoveTurnright
+请 左转 __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+往前 移动 __label____label__MoveForward
+后退 三步 __label____label__MoveBackward
+直走 __label____label__MoveForward
+走向 前方 __label____label__MoveForward
+前行 ！ __label____label__MoveForward
+最近 有 什么 新闻 ？ __label____label__unknown
+向 右侧 移动 __label____label__MoveTurnright
+向 右边 挪 一点 __label____label__MoveTurnright
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+请 再 往后 往后走 一点 __label____label__MoveBackward
+请 右转 __label____label__MoveTurnright
+向 右方 转动 __label____label__MoveTurnright
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+倒退 一点 __label____label__MoveBackward
+请 向 右 移动 __label____label__MoveTurnright
+向 右侧 移动 __label____label__MoveTurnright
+左拐 __label____label__MoveTurnLeft
+请 向前 向前走 五步 __label____label__MoveForward
+继续 前进 继续前进 __label____label__MoveForward
+向 后 倒 一点 __label____label__MoveBackward
+走向 前方 __label____label__MoveForward
+你 会 唱歌 吗 __label____label__unknown
+向前 向前走 两步 __label____label__MoveForward
+左转 五度 __label____label__MoveTurnLeft
+左侧 走 一点 __label____label__MoveTurnLeft
+再会 ！ __label____label__TalkEnd
+请 右转 __label____label__MoveTurnright
+向 右方 转动 __label____label__MoveTurnright
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+左拐 __label____label__MoveTurnLeft
+向 后 倒 一点 __label____label__MoveBackward
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+请 再 往后 往后走 一点 __label____label__MoveBackward
+左转 五度 __label____label__MoveTurnLeft
+今天 星期 几 ？ __label____label__unknown
+再 后退 一点 __label____label__MoveBackward
+往右 走 三步 __label____label__MoveTurnright
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+你 会 唱歌 吗 __label____label__unknown
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+请 左转 __label____label__MoveTurnLeft
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+请 向前 向前走 五步 __label____label__MoveForward
+后退 一步 __label____label__MoveBackward
+退后 __label____label__MoveBackward
+向前 踏步 __label____label__MoveForward
+继续 前进 继续前进 __label____label__MoveForward
+左转 __label____label__MoveTurnLeft
+往右 走 三步 __label____label__MoveTurnright
+你 会 唱歌 吗 __label____label__unknown
+请 往前 往前走 __label____label__MoveForward
+向 右方 转动 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+前行 ！ __label____label__MoveForward
+左转 五度 __label____label__MoveTurnLeft
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+向 右方 转动 __label____label__MoveTurnright
+请 前进 一点 __label____label__MoveForward
+向 左方 移动 一点 __label____label__MoveTurnLeft
+退后 __label____label__MoveBackward
+请 退 两步 __label____label__MoveBackward
+向 后退 一点 __label____label__MoveBackward
+向 左 移动 __label____label__MoveTurnLeft
+今天 星期 几 ？ __label____label__unknown
+直走 __label____label__MoveForward
+后退 三步 __label____label__MoveBackward
+向前 向前走 两步 __label____label__MoveForward
+右转 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 往后 移动 __label____label__MoveBackward
+向 右 拐 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+请 左转 __label____label__MoveTurnLeft
+请 向左走 __label____label__MoveTurnLeft
+请往 左 拐 __label____label__MoveTurnLeft
+前行 ！ __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+前方 直行 __label____label__MoveForward
+右方 调整 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+这个 世界 有 多 大 ？ __label____label__unknown
+再会 ！ __label____label__TalkEnd
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 再 往后 往后走 一点 __label____label__MoveBackward
+向 左边 走 __label____label__MoveTurnLeft
+右方 调整 __label____label__MoveTurnright
+向 后 倒 一点 __label____label__MoveBackward
+后退 一步 __label____label__MoveBackward
+再见 啦 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 向前 向前走 五步 __label____label__MoveForward
+左转 __label____label__MoveTurnLeft
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+后退 三步 __label____label__MoveBackward
+向 后 倒 一点 __label____label__MoveBackward
+向前 移动 一点 __label____label__MoveForward
+请 向前 向前走 五步 __label____label__MoveForward
+直走 __label____label__MoveForward
+后退 一步 __label____label__MoveBackward
+向 左 移动 __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+向 后退 一点 __label____label__MoveBackward
+现在 几点 了 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+倒退 一点 __label____label__MoveBackward
+直走 __label____label__MoveForward
+向 左方 移动 一点 __label____label__MoveTurnLeft
+右方 调整 __label____label__MoveTurnright
+向 右边 挪 一点 __label____label__MoveTurnright
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+请 向 右 移动 __label____label__MoveTurnright
+左侧 走 一点 __label____label__MoveTurnLeft
+请 退 两步 __label____label__MoveBackward
+向 左边 走 __label____label__MoveTurnLeft
+继续 前进 继续前进 __label____label__MoveForward
+请 退 两步 __label____label__MoveBackward
+走向 前方 __label____label__MoveForward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+继续 前进 继续前进 __label____label__MoveForward
+请 右转 __label____label__MoveTurnright
+往 前进 一点 __label____label__MoveForward
+后退 三步 __label____label__MoveBackward
+继续 前进 继续前进 __label____label__MoveForward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+向 后退 一点 __label____label__MoveBackward
+向 左边 走 __label____label__MoveTurnLeft
+请 朝右 走 __label____label__MoveTurnright
+拜拜 ！ __label____label__TalkEnd
+请 往前 往前走 __label____label__MoveForward
+请 往前 往前走 __label____label__MoveForward
+向 右方 转动 __label____label__MoveTurnright
+前行 ！ __label____label__MoveForward
+右方 调整 __label____label__MoveTurnright
+左转 五度 __label____label__MoveTurnLeft
+后退 一步 __label____label__MoveBackward
+请 往后 移动 __label____label__MoveBackward
+继续 前进 继续前进 __label____label__MoveForward
+请 退 两步 __label____label__MoveBackward
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+左侧 走 一点 __label____label__MoveTurnLeft
+倒退 一点 __label____label__MoveBackward
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+最近 有 什么 新闻 ？ __label____label__unknown
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+左边 往左边 移动 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+请 前进 一点 __label____label__MoveForward
+请 右转 __label____label__MoveTurnright
+左转 __label____label__MoveTurnLeft
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+我 可以 问 你 一个 问题 吗 ？ __label____label__unknown
+左侧 调整 __label____label__MoveTurnLeft
+向 左边 走 __label____label__MoveTurnLeft
+再 后退 一点 __label____label__MoveBackward
+倒退 一点 __label____label__MoveBackward
+拜拜 ！ __label____label__TalkEnd
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 左转 __label____label__MoveTurnLeft
+请 前进 一点 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+往前 移动 __label____label__MoveForward
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+前方 直行 __label____label__MoveForward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+左转 五度 __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+往后 往后走 __label____label__MoveBackward
+请 向 右 移动 __label____label__MoveTurnright
+倒退 一点 __label____label__MoveBackward
+右方 调整 __label____label__MoveTurnright
+向 后退 一点 __label____label__MoveBackward
+我要 机票 订机票 __label____label__unknown
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+向 后 倒 一点 __label____label__MoveBackward
+右转 __label____label__MoveTurnright
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+向前 向前走 两步 __label____label__MoveForward
+今天 星期 几 ？ __label____label__unknown
+左转 __label____label__MoveTurnLeft
+左边 往左边 移动 __label____label__MoveTurnLeft
+直走 __label____label__MoveForward
+向 右边 挪 一点 __label____label__MoveTurnright
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+请 右转 __label____label__MoveTurnright
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+我要 机票 订机票 __label____label__unknown
+今天 星期 几 ？ __label____label__unknown
+向 右侧 移动 __label____label__MoveTurnright
+你 会 唱歌 吗 __label____label__unknown
+请 向前 向前走 三步 __label____label__MoveForward
+右转 __label____label__MoveTurnright
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+你 会 唱歌 吗 __label____label__unknown
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+请 退 两步 __label____label__MoveBackward
+倒退 一点 __label____label__MoveBackward
+前方 直行 __label____label__MoveForward
+请 向 右 移动 __label____label__MoveTurnright
+请 向 右 移动 __label____label__MoveTurnright
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+这个 世界 有 多 大 ？ __label____label__unknown
+我要 机票 订机票 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+往右 走 三步 __label____label__MoveTurnright
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+前方 直行 __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+左拐 __label____label__MoveTurnLeft
+向前 移动 一点 __label____label__MoveForward
+再 后退 一点 __label____label__MoveBackward
+直走 __label____label__MoveForward
+继续 前进 继续前进 __label____label__MoveForward
+请 左转 __label____label__MoveTurnLeft
+左侧 走 一点 __label____label__MoveTurnLeft
+拜拜 ！ __label____label__TalkEnd
+向前 踏步 __label____label__MoveForward
+请往 左 拐 __label____label__MoveTurnLeft
+倒退 一点 __label____label__MoveBackward
+左侧 调整 __label____label__MoveTurnLeft
+请 右转 __label____label__MoveTurnright
+你 会 讲 笑话 吗 ？ __label____label__unknown
+退后 __label____label__MoveBackward
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+请 往后 移动 __label____label__MoveBackward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+向 左方 移动 一点 __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+向 右侧 移动 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+向 左 移动 __label____label__MoveTurnLeft
+向 后退 一点 __label____label__MoveBackward
+请 向前 向前走 三步 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+向 左边 走 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+右方 调整 __label____label__MoveTurnright
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+你 叫 什么 名字 ？ __label____label__unknown
+请 退 两步 __label____label__MoveBackward
+前方 直行 __label____label__MoveForward
+现在 几点 了 __label____label__unknown
+直走 __label____label__MoveForward
+请 往前 往前走 __label____label__MoveForward
+走向 前方 __label____label__MoveForward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+向 右边 挪 一点 __label____label__MoveTurnright
+倒退 一点 __label____label__MoveBackward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+拜拜 ！ __label____label__TalkEnd
+左侧 走 一点 __label____label__MoveTurnLeft
+请往 左 拐 __label____label__MoveTurnLeft
+继续 前进 继续前进 __label____label__MoveForward
+往右 右边 往右边 拐 __label____label__MoveTurnright
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+往 前进 一点 __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+向 右方 转动 __label____label__MoveTurnright
+现在 几点 了 __label____label__unknown
+向 左方 移动 一点 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+请 再 往后 往后走 一点 __label____label__MoveBackward
+前行 ！ __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+前行 ！ __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+前方 直行 __label____label__MoveForward
+后退 三步 __label____label__MoveBackward
+请 右转 __label____label__MoveTurnright
+左拐 __label____label__MoveTurnLeft
+请往 左 拐 __label____label__MoveTurnLeft
+请 向 右 移动 __label____label__MoveTurnright
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+左转 五度 __label____label__MoveTurnLeft
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+你 会 唱歌 吗 __label____label__unknown
+往右 走 三步 __label____label__MoveTurnright
+请 右转 __label____label__MoveTurnright
+向 右侧 移动 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+再见 啦 ！ __label____label__TalkEnd
+最近 有 什么 新闻 ？ __label____label__unknown
+向 右边 挪 一点 __label____label__MoveTurnright
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+右方 调整 __label____label__MoveTurnright
+再见 啦 ！ __label____label__TalkEnd
+左转 五度 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+向前 移动 一点 __label____label__MoveForward
+今天 星期 几 ？ __label____label__unknown
+左转 __label____label__MoveTurnLeft
+后退 三步 __label____label__MoveBackward
+倒退 一点 __label____label__MoveBackward
+左侧 走 一点 __label____label__MoveTurnLeft
+往右 走 三步 __label____label__MoveTurnright
+向前 向前走 两步 __label____label__MoveForward
+向 后退 一点 __label____label__MoveBackward
+请 右转 __label____label__MoveTurnright
+向前 移动 一点 __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+请 退 两步 __label____label__MoveBackward
+请 往后 移动 __label____label__MoveBackward
+这个 世界 有 多 大 ？ __label____label__unknown
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+向 后 倒 一点 __label____label__MoveBackward
+请往 左 拐 __label____label__MoveTurnLeft
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+往前 移动 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+你 叫 什么 名字 ？ __label____label__unknown
+左侧 调整 __label____label__MoveTurnLeft
+后退 三步 __label____label__MoveBackward
+往 前进 一点 __label____label__MoveForward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+再见 啦 ！ __label____label__TalkEnd
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请往 左 拐 __label____label__MoveTurnLeft
+右转 __label____label__MoveTurnright
+再 后退 一点 __label____label__MoveBackward
+前方 直行 __label____label__MoveForward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+请 向前 向前走 三步 __label____label__MoveForward
+你 会 唱歌 吗 __label____label__unknown
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+请 退 两步 __label____label__MoveBackward
+前行 ！ __label____label__MoveForward
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+右转 __label____label__MoveTurnright
+左边 往左边 移动 __label____label__MoveTurnLeft
+左侧 调整 __label____label__MoveTurnLeft
+请 倒退 一步 __label____label__MoveBackward
+最近 有 什么 新闻 ？ __label____label__unknown
+左转 __label____label__MoveTurnLeft
+拜拜 ！ __label____label__TalkEnd
+右方 调整 __label____label__MoveTurnright
+请 后退 __label____label__MoveBackward
+往右 走 三步 __label____label__MoveTurnright
+请 向左走 __label____label__MoveTurnLeft
+后退 一步 __label____label__MoveBackward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+请 向左走 __label____label__MoveTurnLeft
+继续 前进 继续前进 __label____label__MoveForward
+请 朝右 走 __label____label__MoveTurnright
+走向 前方 __label____label__MoveForward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+你 叫 什么 名字 ？ __label____label__unknown
+请往 左 拐 __label____label__MoveTurnLeft
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+再会 ！ __label____label__TalkEnd
+向 左 移动 __label____label__MoveTurnLeft
+向 右 拐 __label____label__MoveTurnright
+请 朝右 走 __label____label__MoveTurnright
+我要 机票 订机票 __label____label__unknown
+右方 调整 __label____label__MoveTurnright
+后退 三步 __label____label__MoveBackward
+你 会 唱歌 吗 __label____label__unknown
+后退 一步 __label____label__MoveBackward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请 左转 __label____label__MoveTurnLeft
+右方 调整 __label____label__MoveTurnright
+左转 __label____label__MoveTurnLeft
+今天 星期 几 ？ __label____label__unknown
+请 右转 __label____label__MoveTurnright
+退后 __label____label__MoveBackward
+往后 往后走 __label____label__MoveBackward
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+向 左方 移动 一点 __label____label__MoveTurnLeft
+再见 啦 ！ __label____label__TalkEnd
+今天 星期 几 ？ __label____label__unknown
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+今天 星期 几 ？ __label____label__unknown
+请 后退 __label____label__MoveBackward
+向 右侧 移动 __label____label__MoveTurnright
+拜拜 ！ __label____label__TalkEnd
+再 后退 一点 __label____label__MoveBackward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+右方 调整 __label____label__MoveTurnright
+后退 三步 __label____label__MoveBackward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+向 后退 一点 __label____label__MoveBackward
+前方 直行 __label____label__MoveForward
+往 前进 一点 __label____label__MoveForward
+你 会 讲 笑话 吗 ？ __label____label__unknown
+向前 向前走 两步 __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请 右转 __label____label__MoveTurnright
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+前行 ！ __label____label__MoveForward
+向 左 移动 __label____label__MoveTurnLeft
+往右 走 三步 __label____label__MoveTurnright
+向 左 移动 __label____label__MoveTurnLeft
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+拜拜 ！ __label____label__TalkEnd
+向前 移动 一点 __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+向 右边 挪 一点 __label____label__MoveTurnright
+右方 调整 __label____label__MoveTurnright
+倒退 一点 __label____label__MoveBackward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+请 倒退 一步 __label____label__MoveBackward
+请 向 右 移动 __label____label__MoveTurnright
+向 左方 移动 一点 __label____label__MoveTurnLeft
+向前 向前走 两步 __label____label__MoveForward
+请 前进 一点 __label____label__MoveForward
+请 后退 __label____label__MoveBackward
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+右方 调整 __label____label__MoveTurnright
+向 后 倒 一点 __label____label__MoveBackward
+请 倒退 一步 __label____label__MoveBackward
+我要 机票 订机票 __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+后退 一步 __label____label__MoveBackward
+请 往后 移动 __label____label__MoveBackward
+再 后退 一点 __label____label__MoveBackward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+请 向左走 __label____label__MoveTurnLeft
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+请 倒退 一步 __label____label__MoveBackward
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+请往 左 拐 __label____label__MoveTurnLeft
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+向 后 倒 一点 __label____label__MoveBackward
+右方 调整 __label____label__MoveTurnright
+直走 __label____label__MoveForward
+向 右边 挪 一点 __label____label__MoveTurnright
+请 往前 往前走 __label____label__MoveForward
+请 向左走 __label____label__MoveTurnLeft
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+往后 往后走 __label____label__MoveBackward
+拜拜 ！ __label____label__TalkEnd
+向前 踏步 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+我要 机票 订机票 __label____label__unknown
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+再见 啦 ！ __label____label__TalkEnd
+走向 前方 __label____label__MoveForward
+请 退 两步 __label____label__MoveBackward
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+往前 移动 __label____label__MoveForward
+左转 __label____label__MoveTurnLeft
+左侧 走 一点 __label____label__MoveTurnLeft
+再 后退 一点 __label____label__MoveBackward
+倒退 一点 __label____label__MoveBackward
+这个 世界 有 多 大 ？ __label____label__unknown
+现在 几点 了 __label____label__unknown
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+请 向前 向前走 五步 __label____label__MoveForward
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+拜拜 ！ __label____label__TalkEnd
+我要 机票 订机票 __label____label__unknown
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+左转 __label____label__MoveTurnLeft
+你 会 讲 笑话 吗 ？ __label____label__unknown
+再会 ！ __label____label__TalkEnd
+请 左转 __label____label__MoveTurnLeft
+向前 踏步 __label____label__MoveForward
+你 会 讲 笑话 吗 ？ __label____label__unknown
+左侧 调整 __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+请 朝右 走 __label____label__MoveTurnright
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+向 后退 一点 __label____label__MoveBackward
+请 往前 往前走 __label____label__MoveForward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+向前 移动 一点 __label____label__MoveForward
+请 倒退 一步 __label____label__MoveBackward
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+向 右方 转动 __label____label__MoveTurnright
+你 会 唱歌 吗 __label____label__unknown
+今天 星期 几 ？ __label____label__unknown
+这个 世界 有 多 大 ？ __label____label__unknown
+请 退 两步 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 退 两步 __label____label__MoveBackward
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+请往 左 拐 __label____label__MoveTurnLeft
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+请 朝右 走 __label____label__MoveTurnright
+向 左边 走 __label____label__MoveTurnLeft
+再见 啦 ！ __label____label__TalkEnd
+向 右方 转动 __label____label__MoveTurnright
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+向 右边 挪 一点 __label____label__MoveTurnright
+向 右侧 移动 __label____label__MoveTurnright
+左转 __label____label__MoveTurnLeft
+左侧 调整 __label____label__MoveTurnLeft
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+左边 往左边 移动 __label____label__MoveTurnLeft
+左拐 __label____label__MoveTurnLeft
+现在 几点 了 __label____label__unknown
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+现在 几点 了 __label____label__unknown
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+左侧 走 一点 __label____label__MoveTurnLeft
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+继续 前进 继续前进 __label____label__MoveForward
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+向 左边 走 __label____label__MoveTurnLeft
+后退 一步 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+左转 __label____label__MoveTurnLeft
+你 叫 什么 名字 ？ __label____label__unknown
+往 前进 一点 __label____label__MoveForward
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+左转 五度 __label____label__MoveTurnLeft
+左边 往左边 移动 __label____label__MoveTurnLeft
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+退后 __label____label__MoveBackward
+前行 ！ __label____label__MoveForward
+倒退 一点 __label____label__MoveBackward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+左边 往左边 移动 __label____label__MoveTurnLeft
+右转 __label____label__MoveTurnright
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+请 往后 移动 __label____label__MoveBackward
+直走 __label____label__MoveForward
+退后 __label____label__MoveBackward
+请 向前 向前走 三步 __label____label__MoveForward
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+向 左边 走 __label____label__MoveTurnLeft
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 朝右 走 __label____label__MoveTurnright
+拜拜 ！ __label____label__TalkEnd
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+再 后退 一点 __label____label__MoveBackward
+你 叫 什么 名字 ？ __label____label__unknown
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 后退 __label____label__MoveBackward
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+今天 星期 几 ？ __label____label__unknown
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+你 能 帮 我 翻译 这句 话 吗 ？ __label____label__unknown
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+向 后退 一点 __label____label__MoveBackward
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+后退 三步 __label____label__MoveBackward
+请 左转 __label____label__MoveTurnLeft
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+前方 直行 __label____label__MoveForward
+前行 ！ __label____label__MoveForward
+向 后退 一点 __label____label__MoveBackward
+请 向左走 __label____label__MoveTurnLeft
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+请 倒退 一步 __label____label__MoveBackward
+左边 往左边 移动 __label____label__MoveTurnLeft
+你 会 讲 笑话 吗 ？ __label____label__unknown
+请 向左走 __label____label__MoveTurnLeft
+退后 __label____label__MoveBackward
+向 右侧 移动 __label____label__MoveTurnright
+往前 移动 __label____label__MoveForward
+最近 有 什么 新闻 ？ __label____label__unknown
+往右 走 三步 __label____label__MoveTurnright
+向 左边 走 __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+向 左 移动 __label____label__MoveTurnLeft
+请 向 右 移动 __label____label__MoveTurnright
+往 前进 一点 __label____label__MoveForward
+向前 踏步 __label____label__MoveForward
+请 向 右 移动 __label____label__MoveTurnright
+这个 世界 有 多 大 ？ __label____label__unknown
+请 向前 向前走 三步 __label____label__MoveForward
+拜拜 ！ __label____label__TalkEnd
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+向前 移动 一点 __label____label__MoveForward
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+你 会 讲 笑话 吗 ？ __label____label__unknown
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+请 往前 往前走 __label____label__MoveForward
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+请 前进 一点 __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+请 往后 移动 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+向 左 移动 __label____label__MoveTurnLeft
+再会 ！ __label____label__TalkEnd
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+直走 __label____label__MoveForward
+后退 一步 __label____label__MoveBackward
+退后 __label____label__MoveBackward
+走向 前方 __label____label__MoveForward
+向 左 移动 __label____label__MoveTurnLeft
+往 前进 一点 __label____label__MoveForward
+请 向前 向前走 五步 __label____label__MoveForward
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+请 往前 往前走 __label____label__MoveForward
+我要 机票 订机票 __label____label__unknown
+向 后 倒 一点 __label____label__MoveBackward
+继续 前进 继续前进 __label____label__MoveForward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+前行 ！ __label____label__MoveForward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+请 向左走 __label____label__MoveTurnLeft
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+请 再 往后 往后走 一点 __label____label__MoveBackward
+直走 __label____label__MoveForward
+请 往前 往前走 __label____label__MoveForward
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+拜拜 ！ __label____label__TalkEnd
+退后 __label____label__MoveBackward
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+继续 前进 继续前进 __label____label__MoveForward
+告诉 我 一个 有趣 的 事实 __label____label__unknown
+向 左方 移动 一点 __label____label__MoveTurnLeft
+左转 __label____label__MoveTurnLeft
+请 倒退 一步 __label____label__MoveBackward
+请 退 两步 __label____label__MoveBackward
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+请 向 右 移动 __label____label__MoveTurnright
+请 朝右 走 __label____label__MoveTurnright
+倒退 一点 __label____label__MoveBackward
+左侧 调整 __label____label__MoveTurnLeft
+请 退 两步 __label____label__MoveBackward
+往右 右边 往右边 拐 __label____label__MoveTurnright
+再见 啦 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+继续 前进 继续前进 __label____label__MoveForward
+请 往后 移动 __label____label__MoveBackward
+这个 世界 有 多 大 ？ __label____label__unknown
+最近 有 什么 新闻 ？ __label____label__unknown
+请 倒退 一步 __label____label__MoveBackward
+我要 机票 订机票 __label____label__unknown
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+走向 前方 __label____label__MoveForward
+请 退 两步 __label____label__MoveBackward
+请 向 右 移动 __label____label__MoveTurnright
+左拐 __label____label__MoveTurnLeft
+右侧 有 障碍 障碍物 吗 ？ __label____label__MoveTurnright
+感谢 你 的 帮助 ， 再见 ！ __label____label__TalkEnd
+你 会 唱歌 吗 __label____label__unknown
+请往 左 拐 __label____label__MoveTurnLeft
+往右 右边 往右边 走 一点 __label____label__MoveTurnright
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+再会 ！ __label____label__TalkEnd
+最近 有 什么 新闻 ？ __label____label__unknown
+走向 前方 __label____label__MoveForward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+咱们 下次 再聊 ， 拜 ！ __label____label__TalkEnd
+最近 有 什么 新闻 ？ __label____label__unknown
+你 最 喜欢 的 颜色 是 什么 ？ __label____label__unknown
+请 后退 __label____label__MoveBackward
+现在 几点 了 __label____label__unknown
+你 会 唱歌 吗 __label____label__unknown
+左转 五度 __label____label__MoveTurnLeft
+你 会 讲 笑话 吗 ？ __label____label__unknown
+退后 __label____label__MoveBackward
+晚安 ， 明天 见 ！ __label____label__TalkEnd
+左侧 走 一点 __label____label__MoveTurnLeft
+请 往前 往前走 __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+请往 左 拐 __label____label__MoveTurnLeft
+你 会 唱歌 吗 __label____label__unknown
+这个 世界 有 多 大 ？ __label____label__unknown
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+向 后 倒 一点 __label____label__MoveBackward
+左侧 走 一点 __label____label__MoveTurnLeft
+请 倒退 一步 __label____label__MoveBackward
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+向 右方 转动 __label____label__MoveTurnright
+这个 世界 有 多 大 ？ __label____label__unknown
+左转 __label____label__MoveTurnLeft
+向 后退 一点 __label____label__MoveBackward
+请 向左走 __label____label__MoveTurnLeft
+请 右转 向右转 动 一点 __label____label__MoveTurnright
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+最近 有 什么 新闻 ？ __label____label__unknown
+前行 ！ __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+向 右方 转动 __label____label__MoveTurnright
+向 右侧 移动 __label____label__MoveTurnright
+向前 移动 一点 __label____label__MoveForward
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+好 的 ， 谢谢 你 ， 再见 ！ __label____label__TalkEnd
+直走 __label____label__MoveForward
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+请 朝右 走 __label____label__MoveTurnright
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+左转 __label____label__MoveTurnLeft
+请 左转 __label____label__MoveTurnLeft
+你 叫 什么 名字 ？ __label____label__unknown
+请 右转 __label____label__MoveTurnright
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
+走向 前方 __label____label__MoveForward
+往前 移动 __label____label__MoveForward
+走向 前方 __label____label__MoveForward
+向 后退 一点 __label____label__MoveBackward
+左侧 走 一点 __label____label__MoveTurnLeft
+往右 走 三步 __label____label__MoveTurnright
+你 会 讲 笑话 吗 ？ __label____label__unknown
+你 会 讲 笑话 吗 ？ __label____label__unknown
+向 后 挪 一点 __label____label__MoveBackward
+往右 右边 往右边 拐 __label____label__MoveTurnright
+往右 右边 往右边 拐 __label____label__MoveTurnright
+请往 左 拐 __label____label__MoveTurnLeft
+那 我 先 走 了 ， 再见 ！ __label____label__TalkEnd
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+再 后退 一点 __label____label__MoveBackward
+请 向左走 __label____label__MoveTurnLeft
+向 后退 一点 __label____label__MoveBackward
+向 后 挪 一点 __label____label__MoveBackward
+请 向前 向前走 三步 __label____label__MoveForward
+向前 踏步 __label____label__MoveForward
+向前 踏步 __label____label__MoveForward
+向前 向前走 两步 __label____label__MoveForward
+请 左边 朝左边 走 __label____label__MoveTurnLeft
+走向 前方 __label____label__MoveForward
+你 会 唱歌 吗 __label____label__unknown
+倒退 一点 __label____label__MoveBackward
+现在 几点 了 __label____label__unknown
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+左边 有 障碍 障碍物 吗 ？ __label____label__MoveTurnLeft
+请 向左走 __label____label__MoveTurnLeft
+今天 天天 天气 今天天气 怎么 怎么样 __label____label__unknown
+往右 走 三步 __label____label__MoveTurnright
+今天 天天 天气 今天天气 如何 ？ __label____label__unknown
+左边 往左边 移动 __label____label__MoveTurnLeft
+向 右侧 移动 __label____label__MoveTurnright
+向 右 拐 __label____label__MoveTurnright
+左边 往左边 移动 __label____label__MoveTurnLeft
+请 前进 一点 __label____label__MoveForward
+请 向前 向前走 五步 __label____label__MoveForward
+向 后 倒 一点 __label____label__MoveBackward
+请 向前 向前走 三步 __label____label__MoveForward
+再会 ！ __label____label__TalkEnd
+往右 右边 往右边 拐 __label____label__MoveTurnright
+继续 前进 继续前进 __label____label__MoveForward
+向 左 移动 __label____label__MoveTurnLeft
+退后 __label____label__MoveBackward
+前行 ！ __label____label__MoveForward
+向 后 挪 一点 __label____label__MoveBackward
+向 右侧 移动 __label____label__MoveTurnright
+左拐 __label____label__MoveTurnLeft
+聊得 很 开心 ， 拜拜 ！ __label____label__TalkEnd
+倒退 一点 __label____label__MoveBackward
+直走 __label____label__MoveForward
+向 右侧 移动 __label____label__MoveTurnright
+向 左边 走 __label____label__MoveTurnLeft
+请往 左 拐 __label____label__MoveTurnLeft
+向 后 倒 一点 __label____label__MoveBackward
+左拐 __label____label__MoveTurnLeft
+你 最 喜欢 的 电影 是 什么 ？ __label____label__unknown
+好 的 ， 就 这样 吧 ， 拜拜 ！ __label____label__TalkEnd
